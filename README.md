@@ -31,7 +31,7 @@ For organization purposes, try placing images in annual folders in assets/img/
 ### Site icon and manifest
 Use the template image assets/img/Notscape_icon.xcf to make you own icon with Gimp or other image editor and build default sizes on https://favicon.io/favicon-converter/
 
-Be sure to edit site.webmanifest file ("name" and "short_name"). Put them all in the root.
+Be sure to edit site.webmanifest file ("name" and "short_name"). Put them all in the root replacing the example icons.
 
 ### Advice
 Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
@@ -43,3 +43,6 @@ Adapt the search.php page to the alternative search engine that works best for y
 
 ### Style
 Make a copy of the assets/css/estilos.css file and adapt it to your design preferences.
+
+## Help me
+This is my first public code on github and I'm a beginner. If you see something wrong, please, tell me.
