@@ -16,7 +16,7 @@ $pgDescricao="how we do about privacy";
 
 $AutorPost="John";
 
-$AutorPostBio="about.php"; - NOT MANDATORY
+$AutorPostBio="about.php"; // NOT MANDATORY
 
 $AutorPostJob="boss";
 
