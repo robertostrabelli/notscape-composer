@@ -48,7 +48,11 @@ Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
 I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
 
 ### Search
+The solution to finding specific texts that I deployed is not the best but it is supposed to work.
 Adapt the search.php page to the alternative search engine that works best for you. You will need to change line 27 of 003.php file if you going to use another search engine.
+
+#### Tag search
+Another important detail to consider: In 002.php you must define the domain or subdomain, even if the site is in a subdirectory. At the same time, for the keyword search to work, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
 
 ### Style
 Make a copy of the assets/css/estilos.css file and adapt it to your design preferences.
