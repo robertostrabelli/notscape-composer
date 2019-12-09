@@ -33,7 +33,7 @@ require ('001.php'); ?>
 
 <img src="assets/img/2019/sample.png" alt="error test" />
 
-<p>Don&apos;t worry, everything will be fine if you use <code>&apos;</code> for apostrophe character!</p>
+<p>Don&apos;t worry, everything will be fine if you use <code>& a p o s ;</code> for apostrophe character!</p>
 
 
 '); ?><?php // CONTENT END  ?>
