@@ -28,7 +28,7 @@ $datapub="2019-12-03T16:49:05-03:00";
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
-<p>NOT RECOMMENDED PUT ANY ADDICTIONAL TEXT HERE - DELETE THIS LINE</p>
+<!-- NOT RECOMMENDED PUT ANY ADDICTIONAL TEXT HERE - DELETE THIS LINE -->
 
 <table class="timeline">
 <thead><tr><td>Article</td><td>YEAR-MONTH-DAY</td></tr></thead>'); ?>
@@ -42,10 +42,10 @@ foreach(array_reverse(glob('2*.php')) as $NomedoArquivo) {
  }
 ?>
 <?php echo ('
-<tfoot><tr><td>ONLY USE THIS IF YOU NEED OR LEAVE IT BLANK</td><td>SAME HERE</td></tr></tfood>
+<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfood>
 </table>
 
-<p>NOT RECOMMENDED PUT ANYTHING HERE - DELETE THIS LINE</p>
+<!-- NOT RECOMMENDED PUT ANYTHING HERE - DELETE THIS LINE -->
 
 '); ?> <?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
