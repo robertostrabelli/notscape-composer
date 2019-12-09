@@ -30,23 +30,21 @@ require ('001.php'); ?>
 
 
 <p>Sample portfolio content with css class table</p>
-
+<hr />
 <div class="tabportifolio">
   <div class="tabportifolioimg"><img src="assets/img/2019/sample-trees.jpg" alt="Trees" /></div>
   <div class="tabportifoliodes"><h5>One of my jobs</h5><h6>2007 - 2009</h6>
   <p>You can use this format style for your portfolio or make your own css.</p>
   </div>
 </div>
-
 <hr />
-
 <div class="tabportifolio">
   <div class="tabportifolioimg"><img src="assets/img/2019/sample-trees.jpg" alt="Trees" /></div>
   <div class="tabportifoliodes"><h5>Another one of my jobs</h5><h6>2010 - 2011</h6>
   <p>You can use this format style for your portfolio or make your own css.</p>
   </div>
 </div>
-
+<hr />
 
 '); ?> <?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
