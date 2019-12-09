@@ -23,7 +23,7 @@ echo('
 Tags: <span itemprop="keywords">'); ?>
 <?php // divisao palavras chave ?>
 <?php $pgChaves = explode(',', $pgChaves);
-foreach($pgChaves as $link) {
+foreach($pgChaves as $link) { // if the site was installed in a directory and not in the domain or subdomain root, put the folder name like this /mysite/ after &apos; sign in the line below right after $AddressSite
 echo '<a rel="category tag" href="https://www.qwant.com/?q='.$link.'+site:' . $EnderecoSite . '" title="tag search" target="_blank">'.$link.'</a>';
 }?>
 <?php // divisao palavras chave ?>
