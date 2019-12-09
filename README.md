@@ -26,6 +26,19 @@ Edit in your favorite code editor.
 Use regular html elements. This is important: use **`&apos;`** insted **'**.
 Upload to your server via ftp or web drive in cpanel.
 
+##### Date and time format
+
+When creating a page/post it is important to correctly set the date and time field according to ISO 8601 following this format:
+
+2019-12-09T00:00:00-03:00
+
+| year | month | day | T | hours | minutes | seconds | UTC |
+|------|-------|-----|---|-------|---------|---------|-----|
+|2019  |12     |09   | T |23     |59       |59       |-03:00|
+
+Discover UTC from your location here: https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
+
+
 #### Posts
 Copy the demo post and rename with this filename format: 2019-12-31_The-title-of-my-text.php
 
