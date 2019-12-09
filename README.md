@@ -1,5 +1,5 @@
 # Notscape Composer
-A very small and naive static blogging system for people like me who don't know how to program and don't want or can't use more complex CMS.
+A very small and naive static blog system for people like me who don't know how to program and don't want or can't use more complex CMS.
 
 ![icon sample](android-chrome-192x192.png "icon sample")
 
