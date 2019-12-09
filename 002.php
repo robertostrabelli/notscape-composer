@@ -8,7 +8,7 @@ $PublisherSite="Smith Inc."; // ORGANIZATION NAME OR SAME AS ABOVE
 
 $TituloSite="JS Inc. site"; // SITE NAME
 
-$DescricaoSite="Our site is awsome!"; // VERY SHORT SITE DESCRIPTION
+$DescricaoSite="Our site is awesome!"; // VERY SHORT SITE DESCRIPTION
 
 $Direitos="2019 (C) John Smith"; // SHORT COPYRIGHT OR COPYLEFT ADVICE
 
