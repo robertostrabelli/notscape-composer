@@ -29,21 +29,21 @@ require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
 
-<p>SAMPLE CONTENT</p>
+<p>Sample portfolio content with css class table</p>
 
 <div class="tabportifolio">
-  <div class="tabportifolioimg">IMAGE HERE - LINKED IF YOU WANT</div>
+  <div class="tabportifolioimg"><img src="assets/img/2019/sample-trees.jpg" alt="Trees" /></div>
   <div class="tabportifoliodes"><h5>One of my jobs</h5><h6>2007 - 2009</h6>
-  <p>description</p>
+  <p>You can use this format style for your portfolio or make your own css.</p>
   </div>
 </div>
 
 <hr />
 
 <div class="tabportifolio">
-  <div class="tabportifolioimg">IMAGE HERE - LINKED IF YOU WANT</div>
-  <div class="tabportifoliodes"><h5>Another of my jobs</h5><h6>2008 - 2010</h6>
-  <p>description</p>
+  <div class="tabportifolioimg"><img src="assets/img/2019/sample-trees.jpg" alt="Trees" /></div>
+  <div class="tabportifoliodes"><h5>Another one of my jobs</h5><h6>2010 - 2011</h6>
+  <p>You can use this format style for your portfolio or make your own css.</p>
   </div>
 </div>
 
