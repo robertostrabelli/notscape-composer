@@ -16,7 +16,7 @@ $IdiomaSite="en-us"; // LANGUAGE (SAMPLE: PT, PT-BR, EN, EN-US)
 
 $CharsetSite="utf-8"; // BE CAREFULL, CHANGE ONLY IF NECESSARY - DEFAULT utf-8
 
-$EnderecoSite="https://johnsmithincsite.com"; // URL BASE ( EXEMPLE: https://johnsmithincsite.com )
+$EnderecoSite="https://johnsmithincsite.com"; // ONLY URL BASE ( EXAMPLE: http://johnsmithincsite.com or http://john.jsinc.com )
 
 $Classifica="general"; // SITE RATING
 // general  - FOR EVERYBODY
