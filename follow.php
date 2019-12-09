@@ -8,7 +8,7 @@ $pgRoboGoogle="";
 
 $pgModelo="textofixo"; // PAGE TYPE - textofixo FOR FOLLOW PAGE
 
-$pgTitulo="Sign my newsletter";
+$pgTitulo="Sign up my newsletter";
 
 $pgChaves="newsletter, feed, rss";
 
@@ -30,7 +30,7 @@ require ('001.php'); ?>
 
 
 <h5>Ops!</h5>
-<p>My blog have no automatic feed/rss, please sign my newsletter or follow me on Mastodon: @john_the_dude</p>
+<p>My blog have no automatic feed/rss, please sign my newsletter or follow me on Mastodon: @john_the_blog_dude</p>
 
 
 
