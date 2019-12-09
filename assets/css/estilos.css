@@ -195,7 +195,7 @@ textarea {
 }
 
 table, td {border: 1px solid gray;}
-thead td, tfoot td {border: 1px solid gray;background-color: lightgray}
+thead td, thead th, tfoot td, tfoot th {border: 1px solid gray;background-color: lightgray}
 
 hr {clear:both}
 div.tabportifolioimg {float:left;clear:left;padding-right:2%}
