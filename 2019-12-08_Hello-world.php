@@ -31,6 +31,10 @@ require ('001.php'); ?>
 
 <p>Hi, my name is John Smith and this is my first post on my new awsome personal blog.</p>
 
+<img src="assets/img/2019/sample.png" alt="error test" />
+
+<p>Don&apos;t worry, everything will be fine if you use <code>&apos;</code> for apostrophe character!</p>
+
 
 '); ?><?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
