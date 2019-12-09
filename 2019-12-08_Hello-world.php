@@ -14,15 +14,15 @@ $pgChaves="first, post, awsome, blog"; // META TAGS
 
 $pgDescricao="This is my first post on my new blog"; // SUMMARY OR DESCRIPTION
 
-$AutorPost="John Smith"; // POST AUTHOR'S NAME
+$AutorPost="John"; // POST AUTHOR'S NAME
 
 $AutorPostBio="about.php"; // AUTHOR BIO PAGE
 
 $AutorPostJob="Boss"; // AUTHOR'S JOB - NOT MANDATORY
 
-$AutorPostCompany="Strabelli.com"; // AUTHOR'S COMPANY - NOT MANDATORY
+$AutorPostCompany="JS Inc."; // AUTHOR'S COMPANY - NOT MANDATORY
 
-$datapub="2019-12-03T00:00:00-03:00"; // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-03:00
+$datapub="2019-12-08T00:00:00-03:00"; // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-03:00
 
 
 require ('001.php'); ?>
@@ -37,8 +37,6 @@ require ('001.php'); ?>
 
 
 <hr/>
-
-
 
 
         <h1>HTML5 Test Page</h1>
