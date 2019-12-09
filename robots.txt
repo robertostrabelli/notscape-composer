@@ -1,0 +1,6 @@
+User-agent: BadBot
+Disallow: /
+
+User-Agent: *
+Allow: /index.php
+Disallow: /assets
