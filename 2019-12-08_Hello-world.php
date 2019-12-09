@@ -44,12 +44,9 @@ require ('001.php'); ?>
         <h1>HTML5 Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
 
-        <section id="text">
-          <header><h1>Text</h1></header>
-          <article id="text__headings">
-            <header>
+
+          <h1>Text</h1>
               <h1>Headings</h1>
-            </header>
             <div>
               <h1>Heading 1</h1>
               <h2>Heading 2</h2>
@@ -58,17 +55,11 @@ require ('001.php'); ?>
               <h5>Heading 5</h5>
               <h6>Heading 6</h6>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__paragraphs">
-            <header><h1>Paragraphs</h1></header>
+            <h1>Paragraphs</h1>
             <div>
               <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__blockquotes">
-            <header><h1>Blockquotes</h1></header>
+            <h1>Blockquotes</h1>
             <div>
               <blockquote>
                 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
@@ -76,10 +67,7 @@ require ('001.php'); ?>
                 <cite><a href="#!">Said no one, ever.</a></cite>
               </blockquote>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__lists">
-            <header><h1>Lists</h1></header>
+            <h1>Lists</h1>
             <div>
               <h3>Definition list</h3>
               <dl>
@@ -99,17 +87,11 @@ require ('001.php'); ?>
                 <li>List Item 3</li>
               </ul>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__hr">
-            <header><h1>Horizontal rules</h1></header>
+            <h1>Horizontal rules</h1>
             <div>
               <hr>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__tables">
-            <header><h1>Tabular data</h1></header>
+            <h1>Tabular data</h1>
             <table>
               <caption>Table Caption</caption>
               <thead>
@@ -161,10 +143,7 @@ require ('001.php'); ?>
                 </tr>
               </tbody>
             </table>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__code">
-            <header><h1>Code</h1></header>
+            <h1>Code</h1>
             <div>
               <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
               <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
@@ -178,10 +157,7 @@ require ('001.php'); ?>
   ` a b c d e f g h i j k l m n o
   p q r s t u v w x y z { | } ~ </pre>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__inline">
-            <header><h1>Inline elements</h1></header>
+            <h1>Inline elements</h1>
             <div>
               <p><a href="#!">This is a text link</a>.</p>
               <p><strong>Strong is used to indicate strong importance.</strong></p>
@@ -202,10 +178,7 @@ require ('001.php'); ?>
               <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
               <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="text__comments">
-            <header><h1>HTML Comments</h1></header>
+            <h1>HTML Comments</h1>
             <div>
               <p>There is comment here: <!--This comment should not be displayed--></p>
               <p>There is a comment spanning multiple tags and lines below here.</p>
@@ -213,13 +186,8 @@ require ('001.php'); ?>
               <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
               <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-        </section>
-        <section id="embedded">
-          <header><h1>Embedded content</h1></header>
-          <article id="embedded__images">
-            <header><h2>Images</h2></header>
+          <h1>Embedded content</h1>
+            <h2>Images</h2>
             <div>
               <h3>No <code>&lt;figure&gt;</code> element</h3>
               <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
@@ -231,46 +199,25 @@ require ('001.php'); ?>
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
             </div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__audio">
-            <header><h2>Audio</h2></header>
+            <h2>Audio</h2>
             <div><audio controls="">audio</audio></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__video">
-            <header><h2>Video</h2></header>
+            <h2>Video</h2>
             <div><video controls="">video</video></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__canvas">
-            <header><h2>Canvas</h2></header>
+            <h2>Canvas</h2>
             <div><canvas>canvas</canvas></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__meter">
-            <header><h2>Meter</h2></header>
+
+            <h2>Meter</h2>
             <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__progress">
-            <header><h2>Progress</h2></header>
+
+            <h2>Progress</h2>
             <div><progress>progress</progress></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__svg">
-            <header><h2>Inline SVG</h2></header>
+            <h2>Inline SVG</h2>
             <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-          <article id="embedded__iframe">
-            <header><h2>IFrame</h2></header>
-            <div><iframe src="index.html" height="300"></iframe></div>
-            <footer><p><a href="#top">[Top]</a></p></footer>
-          </article>
-        </section>
-        <section id="forms">
-          <header><h1>Form elements</h1></header>
+
+            <h2>IFrame</h2>
+            <div><iframe src="indextest.html" height="300"></iframe></div>
+
+          <h1>Form elements</h1>
           <form>
             <fieldset id="forms__input">
               <legend>Input fields</legend>
@@ -405,14 +352,13 @@ require ('001.php'); ?>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
           </form>
-        </section>
         <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
 
- 
 
 
-                                      
-                                      
+
+
+
 
 '); ?><?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
