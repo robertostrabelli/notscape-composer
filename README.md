@@ -3,6 +3,8 @@ A very small and naive static blogging system for people like me who don't know 
 
 ![icon sample](android-chrome-192x192.png "icon sample")
 
+See how it looks online: http://supercaras.com.br/notscape-composer/
+
 ## Features
 
 - No SQL
