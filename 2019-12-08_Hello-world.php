@@ -29,7 +29,7 @@ require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
 
-<p>Hi, my name is John Smith and this is my first post on my new awsome personal blog.</p>
+<p>Hi, my name is John Smith and this is my first post on my new awesome personal blog.</p>
 
 <img src="assets/img/2019/sample.png" alt="error test" />
 
