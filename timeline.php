@@ -28,7 +28,7 @@ $datapub="2019-12-03T16:49:05-03:00";
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
-<p>RECOMMENDED PUT ANY ADDICTIONAL TEXT HERE - OR DELETE THIS LINE</p>
+<p>NOT RECOMMENDED PUT ANY ADDICTIONAL TEXT HERE - DELETE THIS LINE</p>
 
 <table class="timeline">
 <thead><tr><td>Article</td><td>YEAR-MONTH-DAY</td></tr></thead>'); ?>
