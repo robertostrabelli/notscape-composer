@@ -24,15 +24,15 @@ Edit in your favorite code editor.
 Use regular html elements. This is important: use **`&apos;`** insted **'**.
 Upload to your server via ftp or web drive in cpanel.
 
-### Posts
+#### Posts
 Copy the demo post and rename with this filename format: 2019-12-31_The-title-of-my-text.php
 
 If you name a post file starting with 0, it will not be displayed in the list. It can be a draft system.
 
-### Pages
+#### Pages
 Create new pages or delete pages you don't want to use except index.php and timeline.php. Don't forget to adapt the menu in the 002.php file.
 
-### Images
+#### Images
 For organization purposes, try placing images in annual folders in assets/img/
 
 ### Site icon and manifest
