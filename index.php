@@ -30,8 +30,7 @@ require ('001.php'); ?>
 
 
 <h6><i>Hi!</i></h6>
-
-<p>Welcome to my site!</p>
+<p>Welcome to my site. Here I regularly post some thoughts and even cake recipes.</p>
 
 
 '); ?> <?php // CONTENT END  ?>
