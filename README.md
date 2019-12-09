@@ -1,5 +1,12 @@
-# notscape-composer
+# Notscape Composer
 A very tiny and naive static blog system for people like me who don't know how to program.
+
+## Features
+
+- Very light, good for cheap or limited web host server
+- Fast page load
+- Update files only by ftp or cpanel drive
+- Responsive
 
 ## INSTRUCTIONS
 
@@ -18,19 +25,9 @@ Create new pages or delete pages you don't want to use except index.php and time
 For organization purposes, try placing images in annual folders in assets/img/
 
 ### Site icon and manifest
-Some files referenced in the code are not contained in the project:
-android-chrome-192x192.png
-android-chrome-512x512.png
-apple-touch-icon.png
-favicon-16x16.png
-favicon-32x32.png
-favicon.ico
-site.webmanifest
+Use the template image assets/img/Notscape_icon.xcf to make you own icon with Gimp or other image editor and build default sizes on https://favicon.io/favicon-converter/
 
-They can be generated here:
-https://favicon.io/favicon-converter/
-
-Be sure to edit the site.webmanifest file. Put them all in the root.
+Be sure to edit site.webmanifest file ("name" and "short_name"). Put them all in the root.
 
 ### Advice
 Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
@@ -38,7 +35,7 @@ Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
 I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
 
 ### Search
-Adapt the search.php page to the alternative search engine that works best for you. You will need to change line 27 of the 003.php file if you go use another search engine.
+Adapt the search.php page to the alternative search engine that works best for you. You will need to change line 27 of 003.php file if you going to use another search engine.
 
 ### Style
-Make a copy of the assets/css/estilos.css file and adapt it to your preferences.
+Make a copy of the assets/css/estilos.css file and adapt it to your design preferences.
