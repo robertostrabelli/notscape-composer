@@ -44,27 +44,27 @@ $Revisit="10 days"; // TIME FOR REBUILD SERVER PROXY CACHE
 // Default:
 // <li><a itemprop='url' href='index.php'>home</a></li>
 // <li><a itemprop='url' href='timeline.php'>timeline</a></li>
-// <li><a itemprop='url' href='portfolio.php'>portfólio</a></li>
+// <li><a itemprop='url' href='portfolio.php'>portfolio</a></li>
 // <li><a itemprop='url' href='copyright.php'>copyright</a></li>
-// <li><a itemprop='url' href='search.php'>busca</a></li>
-// <li><a itemprop='url' href='privacy.php'>privacidade</a></li>
-// <li><a itemprop='url' href='follow.php'>seguir</a></li>
-//<li><a itemprop='url' href='about.php'>sobre</a></li>
+// <li><a itemprop='url' href='search.php'>search</a></li>
+// <li><a itemprop='url' href='privacy.php'>privacy</a></li>
+// <li><a itemprop='url' href='follow.php'>follow me</a></li>
+//<li><a itemprop='url' href='about.php'>about</a></li>
 
 
 $MeuMenu="
 <li><a itemprop='url' href='index.php'>home</a></li>
 <li><a itemprop='url' href='timeline.php'>timeline</a></li>
-<li><a itemprop='url' href='portfolio.php'>portfólio</a></li>
+<li><a itemprop='url' href='portfolio.php'>portfolio</a></li>
 <li><a itemprop='url' href='copyright.php'>copyright</a></li>
-<li><a itemprop='url' href='search.php'>busca</a></li>
-<li><a itemprop='url' href='privacy.php'>privacidade</a></li>
-<li><a itemprop='url' href='follow.php'>seguir</a></li>
-<li><a itemprop='url' href='about.php'>sobre</a></li>
+<li><a itemprop='url' href='search.php'>search</a></li>
+<li><a itemprop='url' href='privacy.php'>privacy</a></li>
+<li><a itemprop='url' href='follow.php'>follow me</a></li>
+<li><a itemprop='url' href='about.php'>about</a></li>
 ";
 
 // FOOTER INFO
-
+// inside p tag
 $FooterInfo="
 <small>2019 (c) John Smith <a href='copyright.php'>All rights reserved</a></small>
 ";
