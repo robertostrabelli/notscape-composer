@@ -350,7 +350,7 @@ require ('001.php'); ?>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
           </form>
-        <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+        <p>Sample content made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
 
 
 
