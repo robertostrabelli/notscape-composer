@@ -7,14 +7,14 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 
 ## Features
 
-- No SQL
-- HTML5 and CSS3
+- No SQL, only HTML, CSS and PHP
 - Microdata schema with best SEO practices
 - Full control over what is viewed and indexed by searchbots
 - Very light, good for limited web host server
 - Fast page load
 - Update files only by ftp or cpanel drive
-- Responsive
+- Consistent display on any device
+
 
 ## INSTRUCTIONS
 
