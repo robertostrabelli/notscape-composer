@@ -6,7 +6,8 @@ A very small and naive static blogging system for people like me who don't know 
 - No SQL
 - HTML5 and CSS3
 - Microdata schema with best SEO practices
-- Very light, good for cheap or limited web host server
+- Full control over what is viewed and indexed by searchbots
+- Very light, good for limited web host server
 - Fast page load
 - Update files only by ftp or cpanel drive
 - Responsive
