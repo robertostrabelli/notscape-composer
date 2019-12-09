@@ -40,12 +40,15 @@ Discover UTC from your location here: https://en.wikipedia.org/wiki/List_of_UTC_
 
 
 #### Posts
-Copy the demo post and rename with this filename format: 2019-12-31_The-title-of-my-text.php
+Copy the demo post and rename with this filename format: 2019-12-31_The-title-of-my-text.php . Otherwise it will not be displayed in timeline.php
 
 If you name a post file starting with 0, it will not be displayed in the list. It can be a draft system.
 
 #### Pages
-Create new pages or delete pages you don't want to use except index.php and timeline.php. Don't forget to adapt the menu in the 002.php file.
+
+Create pages with the name you prefer, preferably friendly, with words separated by - or _ and no special characters. Do not start with number 2.
+
+Delete default pages you don't want except index.php and timeline.php. Don't forget to adapt the menu in the 002.php file. Or don't put it in the menu if you want them to be accessed only from other locations. Be creative!
 
 #### Images
 For organization purposes, try placing images in annual folders in assets/img/
