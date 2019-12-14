@@ -6,6 +6,7 @@
 <title>' . $pgTitulo . ' | ' . $TituloSite . '</title>
 <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/estilos.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/mystyle.css" type="text/css" />
 <meta name="keywords" content="' . $pgChaves . '">
 <meta name="description" content="' . $pgDescricao . '">
 <meta name="robots" content="' . $pgRobos . '">
