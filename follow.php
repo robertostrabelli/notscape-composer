@@ -1,37 +1,48 @@
 <?php
-define('cabeca', TRUE); define('configura', TRUE); $canonico = ($_SERVER['REQUEST_URI']);
+define('cabeca', TRUE); 
+define('configura', TRUE); 
+$canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
+// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
+$pgRobos = "noindex,follow";
 
-$pgRobos="noindex,follow";
-$pgRoboGoogle="";
+// INSTRUCTION FOR GOOGLEBOT ONLY
+$pgRoboGoogle = "";
 
-$pgModelo="textofixo"; // PAGE TYPE - textofixo FOR FOLLOW PAGE
+// PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
+$pgModelo = "textofixo"; // PAGE TYPE - textofixo FOR FOLLOW PAGE
 
-$pgTitulo="Sign up my newsletter";
+// TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
+$pgTitulo = "Sign up my newsletter";
 
-$pgChaves="newsletter, feed, rss";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
+$pgChaves = "newsletter, feed, rss";
 
-$pgDescricao="be advice about news from me";
+// SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
+$pgDescricao = "be advice about news from me";
 
-$AutorPost="John";
+// PAGE AUTHOR'S NAME
+$AutorPost = "John";
 
-$AutorPostBio="about.php";
+// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
+$AutorPostBio = "about.php";
 
-$AutorPostJob="boss";
+// AUTHOR'S JOB - NOT MANDATORY
+$AutorPostJob = "boss";
 
-$AutorPostCompany="JS Inc.";
+// AUTHOR'S COMPANY - NOT MANDATORY
+$AutorPostCompany = "JS Inc.";
 
-$datapub="2019-12-03T16:49:05-03:00";
-
+// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
+$datapub = "2019-12-03T16:49:05-03:00";
 
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
 
 <h5>Ops!</h5>
-<p>My blog have no automatic feed/rss, please sign my newsletter or follow me on Mastodon: @john_the_blog_dude</p>
-
+<p>My blog have no feed/rss, please sign my newsletter or follow me on Mastodon: @john_the_blog_dude</p>
 
 
 '); ?><?php // CONTENT END  ?>
