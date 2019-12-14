@@ -1,48 +1,48 @@
 <?php
-define('cabeca', TRUE); define('configura', TRUE); $canonico = ($_SERVER['REQUEST_URI']);
+define('cabeca', TRUE); 
+define('configura', TRUE); 
+$canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
+// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
+$pgRobos = "index,follow";
 
-$pgRobos="index,follow"; // SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRoboGoogle=""; // INSTRUCTION ONLY FOR GOOGLEBOT
+// INSTRUCTION FOR GOOGLEBOT ONLY
+$pgRoboGoogle = ""; 
 
-$pgModelo="texto"; // PAGE TYPE - "texto" for regular post with author info on footer, "textofixo" for pages without footer
+// PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
+$pgModelo = "texto";
 
-$pgTitulo="Just a sample content"; // POST TITLE - recommended to use same as filename
+// POST TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
+$pgTitulo = "Just a sample content"; 
 
-$pgChaves="content, post, sample, blog"; // META TAGS
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
+$pgChaves = "sample, content, post"; 
 
-$pgDescricao=""; // SUMMARY OR DESCRIPTION
+// SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
+$pgDescricao = "This is my second post on my new blog and it is just sample content."; 
 
-$AutorPost="John"; // POST AUTHOR'S NAME
+// POST AUTHOR'S NAME
+$AutorPost = "John"; 
 
-$AutorPostBio="about.php"; // AUTHOR BIO PAGE
+// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
+$AutorPostBio = "about.php"; 
 
-$AutorPostJob="Boss"; // AUTHOR'S JOB - NOT MANDATORY
+// AUTHOR'S JOB - NOT MANDATORY
+$AutorPostJob = "Boss"; 
 
-$AutorPostCompany="JS Inc."; // AUTHOR'S COMPANY - NOT MANDATORY
+// AUTHOR'S COMPANY - NOT MANDATORY
+$AutorPostCompany = "JS Inc."; 
 
-$datapub="2019-12-09T00:00:00-03:00"; // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-03:00
-
+// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
+$datapub = "2019-12-08T00:02:00-01:00"; 
 
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
 
 
-<p>This is my second post on my new awesome personal blog.</p>
-
-<img src="assets/img/2019/sample.png" alt="error test" />
-
-<p>Don&apos;t worry, everything will be fine if you use <code>& a p o s ;</code> for apostrophe character!</p>
-
-
-<hr/>
-
-
         <h1>HTML5 Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-
-
           <h1>Text</h1>
               <h1>Headings</h1>
             <div>
@@ -203,18 +203,14 @@ require ('001.php'); ?>
             <div><video controls="">video</video></div>
             <h2>Canvas</h2>
             <div><canvas>canvas</canvas></div>
-
             <h2>Meter</h2>
             <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-
             <h2>Progress</h2>
             <div><progress>progress</progress></div>
             <h2>Inline SVG</h2>
             <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-
             <h2>IFrame</h2>
             <div><iframe src="indextest.html" height="300"></iframe></div>
-
           <h1>Form elements</h1>
           <form>
             <fieldset id="forms__input">
@@ -256,7 +252,6 @@ require ('001.php'); ?>
                 <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__select">
               <legend>Select menus</legend>
               <p>
@@ -270,7 +265,6 @@ require ('001.php'); ?>
                 </select>
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__checkbox">
               <legend>Checkboxes</legend>
               <ul class="list list--bare">
@@ -279,7 +273,6 @@ require ('001.php'); ?>
                 <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
               </ul>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__radio">
               <legend>Radio buttons</legend>
               <ul class="list list--bare">
@@ -288,15 +281,13 @@ require ('001.php'); ?>
                 <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
               </ul>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__textareas">
               <legend>Textareas</legend>
               <p>
                 <label for="textarea">Textarea</label>
                 <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
               </p>
-            </fieldset>
-            <p><a href="#top">[Top]</a></p>
+            </fieldset> 
             <fieldset id="forms__html5">
               <legend>HTML5 inputs</legend>
               <p>
@@ -332,7 +323,6 @@ require ('001.php'); ?>
                 <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__action">
               <legend>Action buttons</legend>
               <p>
@@ -348,13 +338,8 @@ require ('001.php'); ?>
                 <button type="button" disabled>&lt;button disabled&gt;</button>
               </p>
             </fieldset>
-            <p><a href="#top">[Top]</a></p>
           </form>
         <p>Sample content made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
-
-
-
-
 
 
 
