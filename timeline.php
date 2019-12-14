@@ -1,36 +1,48 @@
 <?php
-define('cabeca', TRUE); define('configura', TRUE); $canonico = ($_SERVER['REQUEST_URI']);
+define('cabeca', TRUE); 
+define('configura', TRUE); 
+$canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
+// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
+$pgRobos = "noindex,follow";
 
-$pgRobos="noindex,follow";
-$pgRoboGoogle="";
+// INSTRUCTION FOR GOOGLEBOT ONLY
+$pgRoboGoogle = "";
 
-$pgModelo="timeline"; // PAGE TYPE - "timeline" for blog posts list
+// PAGE TYPE - "timeline" ONLY FOR POSTS LIST. "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
+$pgModelo = "timeline";
 
-$pgTitulo="TITLE OF MY POSTS LIST";
+// TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
+$pgTitulo = "All Posts";
 
-$pgChaves="posts, timeline, texts, list";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
+$pgChaves = "posts, timeline, texts, list";
 
-$pgDescricao="THIS IS A LIST OF ALL MY BLOG POSTS";
+// SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
+$pgDescricao = "This is a list of all blog posts";
 
-$AutorPost="John";
+// PAGE AUTHOR'S NAME
+$AutorPost = "John";
 
-$AutorPostBio="about.php";
+// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE - NOT NECESSARY HERE
+$AutorPostBio = "about.php";
 
-$AutorPostJob="boss";
+// AUTHOR'S JOB - NOT MANDATORY
+$AutorPostJob = "boss";
 
-$AutorPostCompany="JS Inc.";
+// AUTHOR'S COMPANY - NOT MANDATORY
+$AutorPostCompany = "JS Inc.";
 
-$datapub="2019-12-03T16:49:05-03:00";
-
+// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
+$datapub = "2019-12-03T16:49:05-03:00";
 
 require ('001.php'); ?>
-<?php // CONTENT START  ?><?php echo ('
+<?php // CONTENT START  ?>
 
-<!-- NOT RECOMMENDED PUT ANY ADDICTIONAL TEXT HERE - DELETE THIS LINE -->
+// DONT MESS WITH THIS
 
-<table class="timeline">
+<?php echo ('<table class="timeline">
 <thead><tr><td>Article</td><td>YEAR-MONTH-DAY</td></tr></thead>'); ?>
 <?php
 foreach(array_reverse(glob('2*.php')) as $NomedoArquivo) {
@@ -41,11 +53,9 @@ foreach(array_reverse(glob('2*.php')) as $NomedoArquivo) {
     echo "<tr><td><a href='$NomedoArquivo'>" . $titulo . "</a></td><td>" . $data . "</td></tr>";
  }
 ?>
-<?php echo ('
-<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfood>
-</table>
+<?php echo ('<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfood>
+</table>'); ?>
 
-<!-- NOT RECOMMENDED PUT ANYTHING HERE - DELETE THIS LINE -->
 
-'); ?> <?php // CONTENT END  ?>
+<?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
