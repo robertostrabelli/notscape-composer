@@ -16,6 +16,7 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 - Consistent display on any device
 
 ## Limitations
+- No comments and pingback
 - No RSS/feed (you will need to use a newsletter or other external solution)
 - Can get chaotic when you have many post and page files (but posts will be in date order)
 - List of posts can get hard to navigate (no solution yet)
