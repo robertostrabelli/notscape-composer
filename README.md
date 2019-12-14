@@ -82,6 +82,7 @@ Another important detail to consider: In 002.php you must define the domain or s
 ### Style
 
 The design was developed according to my preferences, but if you are good at CSS and studying the chaotic organization of CSS classes can change everything. Be free to rethink everything.
+
 The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
 
 ## Help me
