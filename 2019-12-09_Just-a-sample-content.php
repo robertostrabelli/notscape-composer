@@ -35,7 +35,7 @@ $AutorPostJob = "Boss";
 $AutorPostCompany = "JS Inc."; 
 
 // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-08T00:02:00-01:00"; 
+$datapub = "2019-12-09T00:02:00-01:00"; 
 
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
