@@ -58,6 +58,7 @@ Delete default pages you don't want except index.php and timeline.php. Don't for
 
 #### Images
 For organization purposes, try placing images in annual folders in assets/img/
+Use images like this: `<img src="assets/img/2019/sample.jpg" alt="description" />`
 
 ### Site icon and manifest
 Use the template image assets/img/Notscape_icon.xcf to make you own icon with Gimp or other image editor and build default sizes on https://favicon.io/favicon-converter/
