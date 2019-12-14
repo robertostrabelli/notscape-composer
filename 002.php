@@ -1,45 +1,52 @@
 <?php
 
-// GENERAL CONFIG
+// ======== GENERAL CONFIG
 
-$AutorSite="John Smith"; // OWNER, ORGANIZATION OR UNIQUE SITE'S AUTHOR NAME
+// NAME OF COMPANY, ORGANIZATION OR UNIQUE AUTHOR
+$AutorSite = "John Smith";
 
-$PublisherSite="Smith Inc."; // ORGANIZATION NAME OR SAME AS ABOVE
+// ORGANIZATION NAME - OR SAME AS ABOVE
+$PublisherSite = "Smith Inc."; 
 
-$TituloSite="JS Inc. site"; // SITE NAME
+// SITE NAME
+$TituloSite = "JS Inc. site"; 
 
-$DescricaoSite="Our site is awesome!"; // VERY SHORT SITE DESCRIPTION
+// VERY SHORT SITE DESCRIPTION
+$DescricaoSite = "Our site is awesome!"; 
 
-$Direitos="2019 (C) John Smith"; // SHORT COPYRIGHT OR COPYLEFT ADVICE
+// SHORT COPYRIGHT ADVICE
+$Direitos = "2019 (C) John Smith";
 
-$IdiomaSite="en-us"; // LANGUAGE (SAMPLE: PT, PT-BR, EN, EN-US)
+// LANGUAGE (SAMPLE: pt, pt-br, en, en-us)
+$IdiomaSite = "en-us"; 
 
-$CharsetSite="utf-8"; // BE CAREFULL, CHANGE ONLY IF NECESSARY - DEFAULT utf-8
+// BE CAREFULL, CHANGE ONLY IF NECESSARY - DEFAULT utf-8
+$CharsetSite = "utf-8"; 
 
-$EnderecoSite="https://johnsmithincsite.com"; // ONLY URL BASE ( EXAMPLE: http://johnsmithincsite.com or http://john.jsinc.com )
+// ONLY URL BASE ( EXAMPLE: http://johnsmithincsite.com or http://john.jsinc.com )
+$EnderecoSite = "https://johnsmithincsite.com"; 
 
-$Classifica="general"; // SITE RATING
-// general  - FOR EVERYBODY
-// XX years - FOR SPECIFIC AGE
-// mature - FOR +18 YEARS
+// CONTENT SITE RATING
+// general FOR EVERYBODY, XX years FOR SPECIFIC AGE, mature FOR +18 YEARS
+$Classifica = "general"; 
 
-$GeradorSite="Notscape Composer 1.0"; // NO POURPOSE, JUST FOR FUN. LEAVE IT, CHANGE OR DELETE
-
-
-// BROWSER AND SERVER CACHE
-
-$NavegadorCache="no-cache";
-// cache site access files
-    // public: for all same browser users.
-    // private: only for the actual user.
-    // no-cache: no cache the site files.
-    // no-store: cache only for one session.
+// GENERATOR - NO POURPOSE, JUST FOR FUN. LEAVE IT, CHANGE OR LEAVE IN BLANK
+$GeradorSite = "Notscape Composer 1.0";
 
 
-$Revisit="10 days"; // TIME FOR REBUILD SERVER PROXY CACHE
+// ====== BROWSER AND SERVER CACHE
 
+// CACHE SITE ACCESS FILES
+// public: for all same browser users.
+// private: only for the actual user.
+// no-cache: no cache the site files.
+// no-store: cache only for one session.
+$NavegadorCache = "no-cache";
 
-// MENU CONFIG
+// TIME FOR REBUILD SERVER PROXY CACHE
+$Revisit = "10 days";
+
+// ======= MENU CONFIG
 
 // Default:
 // <li><a itemprop='url' href='index.php'>home</a></li>
@@ -49,10 +56,10 @@ $Revisit="10 days"; // TIME FOR REBUILD SERVER PROXY CACHE
 // <li><a itemprop='url' href='search.php'>search</a></li>
 // <li><a itemprop='url' href='privacy.php'>privacy</a></li>
 // <li><a itemprop='url' href='follow.php'>follow me</a></li>
-//<li><a itemprop='url' href='about.php'>about</a></li>
+// <li><a itemprop='url' href='about.php'>about</a></li>
 
 
-$MeuMenu="
+$MeuMenu = "
 <li><a itemprop='url' href='index.php'>home</a></li>
 <li><a itemprop='url' href='timeline.php'>timeline</a></li>
 <li><a itemprop='url' href='portfolio.php'>portfolio</a></li>
@@ -63,10 +70,8 @@ $MeuMenu="
 <li><a itemprop='url' href='about.php'>about</a></li>
 ";
 
-// FOOTER INFO
+// ====== FOOTER INFO
 // inside p tag
-$FooterInfo="
-<small>2019 (c) John Smith <a href='copyright.php'>All rights reserved</a></small>
-";
+$FooterInfo = "<small>2019 &#x24B8; John Smith <a href='copyright.php'>All rights reserved</a></small>";
 
- ?>
+?>
