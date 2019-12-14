@@ -79,7 +79,9 @@ Adapt the search.php page to the alternative search engine that works best for y
 Another important detail to consider: In 002.php you must define the domain or subdomain, even if the site is in a subdirectory. At the same time, for the keyword search to work, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
 
 ### Style
-Edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
+
+The design was developed according to my preferences, but if you are good at CSS and studying the chaotic organization of CSS classes can change everything. Be free to rethink everything.
+The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
 
 ## Help me
-This is my first public code on github and I'm a beginner. If you see something wrong, please, tell me.
+This is my first public code on github and I'm a beginner. If you see something wrong, please, <a href="https://masto.donte.com.br/@roberto" target="_blank">tell me</a>.
