@@ -1,29 +1,41 @@
 <?php
-define('cabeca', TRUE); define('configura', TRUE); $canonico = ($_SERVER['REQUEST_URI']);
+define('cabeca', TRUE); 
+define('configura', TRUE); 
+$canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
+// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
+$pgRobos = "index,follow"; 
 
-$pgRobos="index,follow"; // SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRoboGoogle=""; // INSTRUCTION ONLY FOR GOOGLEBOT - NOT MANDATORY
+// INSTRUCTION FOR GOOGLEBOT ONLY
+$pgRoboGoogle = ""; // INSTRUCTION ONLY FOR GOOGLEBOT - NOT MANDATORY
 
-$pgModelo="entrada"; // PAGE TYPE - "entrada" for index.php
+// PAGE TYPE - "entrada" FOR INDEX WITHOUT ANY FOOTER, "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
+$pgModelo = "entrada"; 
 
-$pgTitulo="Welcome to my site!"; // WELCOME TITLE
+// TITLE - WELCOME TITLE
+$pgTitulo = "Welcome to my site!"; 
 
-$pgChaves="blog, news, personal"; // GENERAL SITE META TAGS
+// META TAGS - 3 OR 4 STRONG KEYWORDS ABOUT SITE SUBJECT WILL SUFFICE
+$pgChaves = "blog, news, personal";
 
-$pgDescricao="John Smith personal blog"; // GENERAL SITE DESCRIPTION
+// GENERAL SITE SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
+$pgDescricao = "John Smith personal blog"; 
 
-$AutorPost="John"; // PAGE AUTHOR'S NAME
+// COMPANY OR AUTHOR'S SITE NAME
+$AutorPost = "John";
 
-$AutorPostBio="about.php"; // PAGE AUTHOR BIO - NOT MANDATORY NOT SHOWN
+// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE - NOT MANDATORY NOT SHOWN IN INDEX
+$AutorPostBio = "about.php"; 
 
-$AutorPostJob="Boss"; // PAGE AUTHOR'S JOB
+// AUTHOR'S JOB - NOT MANDATORY
+$AutorPostJob = "Boss"; 
 
-$AutorPostCompany="JS Inc."; // PAGE AUTHOR'S COMPANY - NOT MANDATORY OR SAME AS THE BLOG
+// AUTHOR'S COMPANY - NOT MANDATORY OR SAME AS THE BLOG
+$AutorPostCompany = "JS Inc.";
 
-$datapub="2019-12-03T21:50:00-03:00"; // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-03:00
-
+// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
+$datapub = "2019-12-03T21:50:00-03:00"; 
 
 require ('001.php'); ?>
 <?php // CONTENT START  ?><?php echo ('
