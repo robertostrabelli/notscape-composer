@@ -7,7 +7,7 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 
 ## Features
 
-- No SQL, only HTML, CSS and PHP
+- No SQL, no JS. Only PHP, CSS and HTML
 - Microdata schema with best SEO practices
 - Full control over what is viewed and indexed by searchbots
 - Very light, good for limited web host server
