@@ -32,9 +32,9 @@ echo('</span>
 </small></p>
 </footer>
 <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-  <meta itemprop="url" content="android-chrome-512x512.png">
-  <meta itemprop="width" content="512">
-  <meta itemprop="height" content="512">
+<meta itemprop="url" content="android-chrome-512x512.png">
+<meta itemprop="width" content="512">
+<meta itemprop="height" content="512">
 </span>
 </article>
 </section>
