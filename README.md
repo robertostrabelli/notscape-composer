@@ -7,6 +7,7 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 
 ## Features
 
+- No composer or generator. Just work out-of-the-box
 - No SQL, no JS. Only PHP, CSS and HTML
 - Microdata schema with best SEO practices
 - Full control over what is viewed and indexed by searchbots
