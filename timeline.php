@@ -43,14 +43,16 @@ require ('001.php'); ?>
 <?php // DONT MESS WITH THIS ?>
 
 <?php echo ('<table class="timeline">
-<thead><tr><td>Article</td><td>YEAR-MONTH-DAY</td></tr></thead>'); ?>
+<thead><tr><td>Article</td><td>Year Month Day</td></tr></thead>'); ?>
 <?php
 foreach(array_reverse(glob('2*.php')) as $NomedoArquivo) {
-    $divisao = explode('.', $NomedoArquivo);
-    $parte = explode('_', $divisao[0]);
-    $titulo = $parte[1];
-    $data = $parte[0];
-    echo "<tr><td><a href='$NomedoArquivo'>" . $titulo . "</a></td><td>" . $data . "</td></tr>";
+$divisao = explode('.', $NomedoArquivo);
+$parte = explode('_', $divisao[0]);
+$titulo = $parte[1];
+$data = $parte[0];
+$titulo = str_replace('-',' ',$titulo);
+$data = str_replace('-',' ',$data);
+echo "<tr><td><a href='$NomedoArquivo'>" . $titulo . "</a></td><td>" . $data . "</td></tr>";
  }
 ?>
 <?php echo ('<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfood>
