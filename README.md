@@ -67,7 +67,19 @@ Use the template image assets/img/Notscape_icon.xcf to make you own icon with Gi
 
 Be sure to edit site.webmanifest file ("name" and "short_name"). Put them all in the root replacing the example icons.
 
+### Dealing with search engines
+
+#### Robots.txt
+This is important if you want full control of search engines access. The robots.txt file must be at the root of domain or subdomain. If used in a subdirectory, it will not work. 
+
+Make a good one using this generator: http://mcanerin.com/search-engine/tools/robots-txt-generator/. Block *assets* directory if you wish. Remember that spambots and badbots do not respect the robots.txt file instructions.
+
+#### robots meta tag
+
+Inside files, use the appropriate instructions on a case by case basis. Follow the guidelines in https://developers.google.com/search/reference/robots_meta_tag#directives_1 and https://developers.google.com/search/reference/robots_meta_tag#directives_1
+
 ### Advice
+
 Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
 
 I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
