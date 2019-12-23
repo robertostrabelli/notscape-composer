@@ -23,12 +23,11 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 - List of posts can get hard to navigate (no solution yet)
 - The search system may fall or bring poor results.
 
-
-## INSTRUCTIONS
-
 ### How does it work?
 
-It is a very basic PHP application, which joins the HTML parts (header, footer and body) and fills in some variable fields like post title, keywords etc. Content files are properly delimited and can be easily edited, imported or exported.
+It is a very basic application of PHP code, which joins the parts of HTML code (header, footer and body) and fills in some variable fields like post title, keywords etc. Content files are properly delimited and can be easily edited, imported or exported.
+
+## INSTRUCTIONS
 
 ### Install
 Just put the files on the server, set up the 002.php file and that should work.
