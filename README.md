@@ -26,6 +26,10 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 
 ## INSTRUCTIONS
 
+### How does it work?
+
+It is a very basic PHP application, which joins the HTML parts (header, footer and body) and fills in some variable fields like post title, keywords etc. Content files are properly delimited and can be easily edited, imported or exported.
+
 ### Install
 Just put the files on the server, set up the 002.php file and that should work.
 
