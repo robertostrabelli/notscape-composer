@@ -101,4 +101,4 @@ The design was developed according to my preferences, but if you are good at CSS
 The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
 
 ## Help me
-This is my first public code on github and I'm a beginner. If you see something wrong, please, <a href="https://masto.donte.com.br/@roberto" target="_blank">tell me</a>.
+This is my first public code on github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
