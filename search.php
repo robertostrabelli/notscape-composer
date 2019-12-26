@@ -59,7 +59,7 @@ document.getElementById('query').value = encodeHTML(document.getElementById('que
 <input type="hidden" name="l" value="pt">
 <input type="submit" name="btnG" value="Go!">
 </form><br/>
-<small>Powered by <a href="https://www.qwant.com" target="_blank">Quant</a></small></p>
+<small>Powered by <a href="https://www.qwant.com" target="_blank">Qwant</a></small></p>
 '); ?>
 
 <?php // CONTENT END  ?>
