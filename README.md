@@ -84,7 +84,7 @@ Inside files, use the appropriate instructions on a case by case basis. Follow t
 ### Internal search
 The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
 
-If you want use another search engine you will need to make changes to the search.php and 002.php files.
+If you want use another search engine you will need to make changes to the search.php, 002.php and 003.php files.
 
 #### Search page setup
 
@@ -101,15 +101,8 @@ The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your d
 
 ### Advice
 
-
-
 Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
-
-
-
-I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
-
-
+I recommend maintaining and using the about.php, follow.php, copyright.php, search.php and privacy.php pages. index.php also is critic.
 
 ## Help me
 This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
