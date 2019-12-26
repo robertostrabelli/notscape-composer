@@ -40,10 +40,9 @@ $datapub = "2019-12-03T16:49:05-03:00";
 require ('001.php'); ?>
 <?php // CONTENT START  ?>
 
-
 <!-- SEARCH INTERNAL SITE PROVIDE BY QWANT.COM - you may change it if dont work for you. See readme.md for instructions. -->
 
-<!-- SEARCH ENGINE SCRIPT -->
+<!-- SEARCH ENGINE SCRIPT -  PUT THE WHOLE URL SITE (WITH SUBDIRECTORY IF IT IS CASE) ON LINE 51 RIGHT AFTER "SITE:" -->
 <script type="text/javascript">
 function encodeHTML(s) {
 return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -55,24 +54,13 @@ document.getElementById('query').value = encodeHTML(document.getElementById('que
 
 <!-- SEARCH ENGINE FORM -->
 <?php echo ('
-
-<form method="GET" action="https://www.qwant.com" id="form" onsubmit="addSiteSearch()">
-<div align="left">
-<table bgcolor="#FFFFFF">
-<tbody>
-<tr><td>
-<a href="https://www.qwant.com"> <img src="https://www.qwant.com/img/logo/q-48.png" border="0" alt="Qwant" align="absmiddle"></a>
-<input type="text" name="q" id="query" size="31" maxlength="255" value="">
-<input type="hidden" name="l" value="fr">
-<input type="submit" name="btnG" value="go">
-</td></tr>
-</tbody>
-</table>
-</div>
-</form>
-
+<p><form method="GET" action="https://www.qwant.com" id="form" onsubmit="addSiteSearch()">
+<input type="text" name="q" id="query" size="31" minlength="3" maxlength="40" value="" aria-label="Search through site content" required>
+<input type="hidden" name="l" value="pt">
+<input type="submit" name="btnG" value="Go!">
+</form><br/>
+<small>Powered by <a href="https://www.qwant.com" target="_blank">Quant</a></small></p>
 '); ?>
-
 
 <?php // CONTENT END  ?>
 <?php define('rodape', TRUE); require ('003.php'); ?>
