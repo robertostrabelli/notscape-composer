@@ -81,13 +81,7 @@ Make a good one using this generator: http://mcanerin.com/search-engine/tools/ro
 
 Inside files, use the appropriate instructions on a case by case basis. Follow the guidelines in https://developers.google.com/search/reference/robots_meta_tag#directives_1 and https://developers.google.com/search/reference/robots_meta_tag#directives_1
 
-### Advice
-
-Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
-
-I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
-
-### Search
+### Internal search
 The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
 
 If you want use another search engine you will need to make changes to the search.php and 002.php files.
@@ -104,6 +98,18 @@ You must define the domain or subdomain in 002.php file, even if the site is in 
 The design was developed according to my preferences, but if you are good at CSS and studying the chaotic organization of CSS classes can change everything. Be free to rethink everything.
 
 The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
+
+### Advice
+
+
+
+Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
+
+
+
+I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
+
+
 
 ## Help me
 This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
