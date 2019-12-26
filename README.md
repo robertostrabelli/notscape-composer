@@ -88,11 +88,16 @@ Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
 I recommend maintaining and using the about.php, follow.php, copyright.php, and privacy.php pages.
 
 ### Search
-The solution to finding specific texts is not the best but it is supposed to work.
-Adapt the search.php page to the alternative search engine that works best for you. You will need to change line 27 of 003.php file if you going to use another search engine.
+The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
+
+If you want use another search engine you will need to make changes to the search.php and 002.php files.
+
+#### Search page setup
+
+Put the full site url on search.php, line 51, right after "site:".
 
 #### Tag search
-Another important detail to consider: In 002.php you must define the domain or subdomain, even if the site is in a subdirectory. At the same time, for the keyword search to work, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
+You must define the domain or subdomain in 002.php file, even if the site is in a subdirectory. At the same time, for keyword search to work from the links in the footer of posts, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
 
 ### Style
 
@@ -101,4 +106,4 @@ The design was developed according to my preferences, but if you are good at CSS
 The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your design preferences.
 
 ## Help me
-This is my first public code on github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
+This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
