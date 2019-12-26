@@ -71,7 +71,7 @@ $MeuMenu = "
 ";
 
 // ====== FOOTER INFO
-// inside p tag
-$FooterInfo = "<small>2019 &#x24B8; John Smith <a href='copyright.php'>All rights reserved</a></small>";
+// content inside p tag is recommended
+$FooterInfo = "<p><small>2019 &#x24B8; John Smith <a href='copyright.php'>All rights reserved</a></small></p>";
 
 ?>
