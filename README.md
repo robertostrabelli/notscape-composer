@@ -17,15 +17,15 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 - Consistent display on any device
 
 ## Limitations
-- No comments and pingback
-- No RSS/feed (you will need to use a newsletter or other external solution)
-- Can get chaotic when you have many post and page files (but posts will be in date order)
-- List of posts can get hard to navigate (no solution yet)
+- No comments and pingback.
+- No RSS/feed (you will need to use a newsletter or other external solution).
+- Can be chaotic when you have many post and page files (but posts will be in date order).
+- List of posts can be hard to navigate.
 - The search system may fall or bring poor results.
 
 ### How does it work?
 
-It is a very basic application of PHP code, which joins the parts of HTML code (header, footer and body) and fills in some variable fields like post title, keywords etc. Content files are properly delimited and can be easily edited, imported or exported.
+It is a very basic application of PHP code, which joins the parts of HTML code (header, footer and body) and fills in some variable fields like post title, keywords etc. Content files are properly delimited and can be easily edited, imported or exported. You will need free access by ftp or cpanel to edit and create files.
 
 ## INSTRUCTIONS
 
