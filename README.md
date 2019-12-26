@@ -96,7 +96,7 @@ If you want use another search engine you will need to make changes to the searc
 
 #### Search page setup
 
-Put the full site url on search.php, line 51, right after "site:".
+Put the full site url on search.php, line 51, right after "site:", without http or www.
 
 #### Tag search
 You must define the domain or subdomain in 002.php file, even if the site is in a subdirectory. At the same time, for keyword search to work from the links in the footer of posts, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
