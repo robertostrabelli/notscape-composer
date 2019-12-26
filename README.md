@@ -30,7 +30,7 @@ It is a very basic application of PHP code, which joins the parts of HTML code (
 ## INSTRUCTIONS
 
 ### Install
-Just put the files on the server, set up the 002.php file and that should work.
+Just put the files on the server, set the 002.php, 003.php and search.php files and that should work.
 
 ### Writing
 Edit in your favorite code editor. 
