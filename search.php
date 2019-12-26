@@ -42,7 +42,7 @@ require ('001.php'); ?>
 
 <!-- SEARCH INTERNAL SITE PROVIDE BY QWANT.COM - you may change it if dont work for you. See readme.md for instructions. -->
 
-<!-- SEARCH ENGINE SCRIPT -  PUT THE WHOLE URL SITE (WITH SUBDIRECTORY IF IT IS CASE) ON LINE 51 RIGHT AFTER "SITE:" -->
+<!-- SEARCH ENGINE SCRIPT -  PUT THE WHOLE URL SITE (WITH SUBDIRECTORY IF IT IS CASE) ON LINE 51 RIGHT AFTER SITE:, WITHOUT HTTP OR WWW -->
 <script type="text/javascript">
 function encodeHTML(s) {
 return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
