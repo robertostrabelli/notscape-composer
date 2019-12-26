@@ -70,16 +70,24 @@ Use the template image assets/img/Notscape_icon.xcf to make you own icon with Gi
 
 Be sure to edit site.webmanifest file ("name" and "short_name"). Put them all in the root replacing the example icons.
 
-### Dealing with search engines
+### Dealing with search engines and memorie
+
+This is very important if you want full control of search engines access and general archive of your content on Internet.
 
 #### Robots.txt
-This is important if you want full control of search engines access. The robots.txt file must be at the root of domain or subdomain. If used in a subdirectory, it will not work. 
+The robots.txt file must be at the root of domain or subdomain. If used in a subdirectory, it will not work. 
 
 Make a good one using this generator: http://mcanerin.com/search-engine/tools/robots-txt-generator/. Block *assets* directory if you wish. Remember that spambots and badbots do not respect the robots.txt file instructions.
 
 #### robots meta tag
 
-Inside files, use the appropriate instructions on a case by case basis. Follow the guidelines in https://developers.google.com/search/reference/robots_meta_tag#directives_1 and https://developers.google.com/search/reference/robots_meta_tag#directives_1
+Inside files, use the appropriate instructions on a case by case basis. 
+Follow the guidelines in 
+- https://developers.google.com/search/reference/robots_meta_tag#directives_1
+
+More info: 
+- https://yoast.com/robots-meta-tags/
+- http://noarchive.net/meta/
 
 ### Internal search
 The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
