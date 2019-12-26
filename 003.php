@@ -41,7 +41,7 @@ echo('</span>
 </main>
 <footer class="roda">
 <p><a href="#top">[Top]</a></p>
-<p>' . $FooterInfo . '</p>
+' . $FooterInfo . '
 </footer>
 </body>
 </html>
