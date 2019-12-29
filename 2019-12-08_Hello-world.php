@@ -41,7 +41,7 @@ require_once __DIR__.'/001.php';
 $conteudo = '
 <p>Hi, my name is John Smith and this is my first post on my new awesome personal blog.</p>
 <img src="assets/img/2019/sample.png" alt="error test" />
-<p>Don&apos;t worry, everything will be fine if you use <code>& a p o s ;</code> for apostrophe character!</p>
+<p>Don&apos;t worry, everything will be fine if you use <code>&</code><code>apos;</code> for apostrophe character!</p>
 ';
 
 echo html_entity_decode($conteudo, ENT_HTML5);
