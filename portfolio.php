@@ -1,6 +1,5 @@
 <?php
-define('cabeca', TRUE); 
-define('configura', TRUE); 
+define('cabeca', true);
 $canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
@@ -11,7 +10,7 @@ $pgRobos = "noindex,follow";
 $pgRoboGoogle = "";
 
 // PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
-$pgModelo = "textofixo"; 
+$pgModelo = "textofixo";
 
 // TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "Portfolio";
@@ -37,9 +36,9 @@ $AutorPostCompany = "JS Inc.";
 // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
 $datapub = "2019-12-07T08:20:00-03:00";
 
-require ('001.php'); ?>
-<?php // CONTENT START  ?><?php echo ('
+require_once __DIR__.'/001.php';
 
+$conteudo = '
 
 <p>Sample portfolio content with css class table</p>
 <hr />
@@ -58,6 +57,8 @@ require ('001.php'); ?>
 </div>
 <hr />
 
+';
 
-'); ?> <?php // CONTENT END  ?>
-<?php define('rodape', TRUE); require ('003.php'); ?>
+echo html_entity_decode($conteudo, ENT_HTML5);
+define('rodape', true);
+require_once __DIR__.'/003.php'; ?>
