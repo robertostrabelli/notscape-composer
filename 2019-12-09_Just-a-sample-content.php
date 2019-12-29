@@ -1,6 +1,5 @@
 <?php
-define('cabeca', TRUE); 
-define('configura', TRUE); 
+define('cabeca', true);
 $canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
@@ -8,39 +7,38 @@ $datamod = date ("c", getlastmod());
 $pgRobos = "index,follow";
 
 // INSTRUCTION FOR GOOGLEBOT ONLY
-$pgRoboGoogle = ""; 
+$pgRoboGoogle = "";
 
 // PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
 $pgModelo = "texto";
 
 // POST TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
-$pgTitulo = "Just a sample content"; 
+$pgTitulo = "Just a sample content";
 
 // META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "sample, content, post"; 
+$pgChaves = "sample, content, post";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
-$pgDescricao = "This is my second post on my new blog and it is just sample content."; 
+$pgDescricao = "This is my second post on my new blog and it is just sample content.";
 
 // POST AUTHOR'S NAME
-$AutorPost = "John"; 
+$AutorPost = "John";
 
 // AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
-$AutorPostBio = "about.php"; 
+$AutorPostBio = "about.php";
 
 // AUTHOR'S JOB - NOT MANDATORY
-$AutorPostJob = "Boss"; 
+$AutorPostJob = "Boss";
 
 // AUTHOR'S COMPANY - NOT MANDATORY
-$AutorPostCompany = "JS Inc."; 
+$AutorPostCompany = "JS Inc.";
 
 // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-09T00:02:00-01:00"; 
+$datapub = "2019-12-09T00:02:00-01:00";
 
-require ('001.php'); ?>
-<?php // CONTENT START  ?><?php echo ('
+require_once __DIR__.'/001.php';
 
-
+$conteudo = '
         <h1>HTML5 Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
           <h1>Text</h1>
@@ -287,7 +285,7 @@ require ('001.php'); ?>
                 <label for="textarea">Textarea</label>
                 <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
               </p>
-            </fieldset> 
+            </fieldset>
             <fieldset id="forms__html5">
               <legend>HTML5 inputs</legend>
               <p>
@@ -340,8 +338,8 @@ require ('001.php'); ?>
             </fieldset>
           </form>
         <p>Sample content made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+';
 
-
-
-'); ?><?php // CONTENT END  ?>
-<?php define('rodape', TRUE); require ('003.php'); ?>
+echo html_entity_decode($conteudo, ENT_HTML5);
+define('rodape', true);
+require_once __DIR__.'/003.php';?>
