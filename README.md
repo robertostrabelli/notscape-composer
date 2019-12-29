@@ -8,7 +8,7 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 ## Features
 
 - No composer or generator. Just work out-of-the-box
-- No SQL, no JS. Only PHP, CSS and HTML
+- No SQL. Only PHP, CSS, a little JS and HTML
 - Microdata schema with best SEO practices
 - Full control over what is viewed and indexed by searchbots
 - Very light, good for limited web host server
@@ -17,7 +17,7 @@ See how it looks online: http://supercaras.com.br/notscape-composer/
 - Consistent display on any device
 
 ## Limitations
-- No comments and pingback.
+- No comments and trackback.
 - No RSS/feed (you will need to use a newsletter or other external solution).
 - Can be chaotic when you have many post and page files (but posts will be in date order).
 - List of posts can be hard to navigate.
@@ -30,7 +30,7 @@ It is a very basic application of PHP code, which joins the parts of HTML code (
 ## INSTRUCTIONS
 
 ### Install
-Just put the files on the server, set the 002.php, 003.php and search.php files and that should work.
+Just put the files on the server, set the 001.php, 003.php and search.php files and that should work.
 
 ### Writing
 Edit in your favorite code editor. 
@@ -49,7 +49,6 @@ When creating a page/post it is important to correctly set the date and time fie
 
 Discover UTC from your location here: https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
 
-
 #### Posts
 Copy the demo post and rename with this filename format: 2019-12-31_The-title-of-my-text.php . Otherwise it will not be displayed in timeline.php
 
@@ -59,7 +58,7 @@ If you name a post file starting with 0, it will not be displayed in the list. I
 
 Create pages with the name you prefer, preferably friendly, with words separated by - or _ and no special characters. Do not start with number 2.
 
-Delete default pages you don't want except index.php and timeline.php. Don't forget to adapt the menu in the 002.php file. Or don't put it in the menu if you want them to be accessed only from other locations. Be creative!
+Delete default pages you don't want except index.php and timeline.php. Don't forget to adapt the menu in the 001.php file. Or don't put it in the menu if you want them to be accessed only from other locations. Be creative!
 
 #### Images
 For organization purposes, try placing images in annual folders in assets/img/
@@ -92,14 +91,14 @@ More info:
 ### Internal search
 The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
 
-If you want use another search engine you will need to make changes to the search.php, 002.php and 003.php files.
+If you want use another search engine you will need to make changes to the search.php, 001.php and 003.php files.
 
 #### Search page setup
 
-Put the full site url on search.php, line 51, right after "site:", without http or www.
+Put the full site url on assets/js/search.js, line 9, right after "site:", without http or www.
 
 #### Tag search
-You must define the domain or subdomain in 002.php file, even if the site is in a subdirectory. At the same time, for keyword search to work from the links in the footer of posts, you must add the directory name to line 27 of the 003.php file according to the instructions written there.
+You must define the domain or subdomain in 001.php file, even if the site is in a subdirectory. At the same time, for keyword search to work from the links in the footer of posts, you must add the directory name to line 31 of the 003.php file according to the instructions written there.
 
 ### Style
 
@@ -109,8 +108,7 @@ The easy way is edit assets/css/mystyle.css file and adapt estilos.css to your d
 
 ### Advice
 
-Avoid messing up the timeline.php, 001.php, 002.php and 003.php files
-I recommend maintaining and using the about.php, follow.php, copyright.php, search.php and privacy.php pages. index.php also is critic.
+Avoid messing up the timeline.php, 001.php and 003.php files. I recommend maintaining and using the about.php, follow.php, copyright.php, search.php and privacy.php pages. index.php also is critic.
 
 ## Help me
 This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
