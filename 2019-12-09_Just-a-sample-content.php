@@ -37,35 +37,30 @@ $AutorPostCompany = "JS Inc.";
 $datapub = "2019-12-09T00:02:00-01:00";
 
 require_once __DIR__.'/001.php';
-
 echo <<<HTML
 
+<!-- BODY TEXT START -->
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
-
 <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
-
 <blockquote>
 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
 <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
 <cite><a href="#!">Said no one, ever.</a></cite>
 </blockquote>
-
 <dl>
 <dt>Definition List Title</dt>
 <dd>This is a definition list division.</dd>
 </dl>
-
 <ol>
 <li>List Item 1</li>
 <li>List Item 2</li>
 <li>List Item 3</li>
 </ol>
-
 <ul>
 <li>List Item 1</li>
 <li>List Item 2</li>
@@ -73,9 +68,7 @@ echo <<<HTML
 </ul>
 
 <p>Horizontal rules</p>
-
 <hr>
-
 <table>
 <caption>Table Caption</caption>
 <thead>
@@ -127,11 +120,9 @@ echo <<<HTML
 </tr>
 </tfoot>
 </table>
-
 <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
 <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
 <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
-
 <h2>Pre-formatted text</h2>
 <pre>P R E F O R M A T T E D T E X T
 ! " # $ % &amp; &apos; ( ) * + , - . /
@@ -140,7 +131,6 @@ echo <<<HTML
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~ </pre>
-
 <p><a href="#!">This is a text link</a>.</p>
 <p><strong>Strong is used to indicate strong importance.</strong></p>
 <p><em>This text has added emphasis.</em></p>
@@ -159,42 +149,34 @@ p q r s t u v w x y z { | } ~ </pre>
 <p>The <mark>mark element</mark> indicates a highlight.</p>
 <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
 <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-
-
 <p>There is comment here: <!--This comment should not be displayed--></p>
 <p>There is a comment spanning multiple tags and lines below here.</p>
 <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
 <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
 <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
-
 <h3>Image with no <code>&lt;figure&gt;</code> element</h3>
 <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
 <h3>Image wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
 <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
 <h3>Image wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
-
 <figure>
 <img src="http://placekitten.com/420/420" alt="Image alt text">
 <figcaption>Here is a caption for this image.</figcaption>
 </figure>
-
 <h2>Audio</h2>
 <audio controls="">audio</audio>
 <h2>Video</h2>
 <video controls="">video</video>
 <h2>Canvas</h2>
 <canvas>canvas</canvas>
-
 <h2>Meter</h2>
 <meter value="2" min="0" max="10">2 out of 10</meter>
-
 <h2>Progress</h2>
 <progress>progress</progress>
 <h2>Inline SVG</h2>
 <svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg>
 <h2>IFrame</h2>
 <iframe src="indextest.html" height="300"></iframe>
-
 <form>
 <fieldset id="forms__input">
 <legend>Input fields</legend>
@@ -322,8 +304,9 @@ p q r s t u v w x y z { | } ~ </pre>
 </p>
 </fieldset>
 </form>
+<p>Made by <a href="https://github.com/cbracco/html5-test-page" target="_blank">@cbracco</a></p>
+<!-- BODY TEXT END -->
 
 HTML;
-
 define('rodape', true);
 require_once __DIR__.'/003.php';?>
