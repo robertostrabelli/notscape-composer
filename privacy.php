@@ -15,8 +15,8 @@ $pgModelo = "textofixo";
 // TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "Privacy policy of this site";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "privacy, data, policy, cookies";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "privacy,data,policy,cookies";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "how we do about privacy";
