@@ -37,9 +37,10 @@ $AutorPostCompany = "JS Inc.";
 $datapub = "2019-12-07T08:20:00-03:00";
 
 require_once __DIR__.'/001.php';
+echo <<<HTML
 
-$conteudo = '
 
+<!-- BODY TEXT START -->
 <p>Sample portfolio content with css class table</p>
 <hr />
 <div class="tabportifolio">
@@ -56,9 +57,9 @@ $conteudo = '
 </div>
 </div>
 <hr />
+<!-- BODY TEXT END -->
 
-';
 
-echo html_entity_decode($conteudo, ENT_HTML5);
+HTML;
 define('rodape', true);
 require_once __DIR__.'/003.php'; ?>
