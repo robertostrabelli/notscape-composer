@@ -15,8 +15,8 @@ $pgModelo = "textofixo";
 // TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "About";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "about, info, contact";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "about,info,contact";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "About me and my awesome tiny blog.";
