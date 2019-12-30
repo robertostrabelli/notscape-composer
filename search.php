@@ -40,13 +40,13 @@ require_once __DIR__.'/001.php';
 
 $conteudo = '
 
-<script type="text/javascript" src="assets/js/search.js"></script>
-<p><form method="GET" action="https://www.qwant.com" id="form" onsubmit="addSiteSearch()">
+<script src="assets/js/search.js"></script>
+<form method="GET" action="https://www.qwant.com" id="form" onsubmit="addSiteSearch()">
 <input type="text" name="q" id="query" size="31" minlength="3" maxlength="40" value="" aria-label="Search through site content" required>
 <input type="hidden" name="l" value="pt">
 <input type="submit" name="btnG" value="Go!">
-</form><br/>
-<small>Powered by <a href="https://www.qwant.com" target="_blank">Qwant</a></small></p>
+</form>
+<p><small>Powered by <a href="https://www.qwant.com" target="_blank">Qwant</a></small></p>
 
 ';
 
