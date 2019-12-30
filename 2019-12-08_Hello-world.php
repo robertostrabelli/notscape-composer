@@ -37,13 +37,16 @@ $AutorPostCompany = "JS Inc.";
 $datapub = "2019-12-08T00:01:00-03:00";
 
 require_once __DIR__.'/001.php';
+echo <<<HTML
 
-$conteudo = '
+
+<!-- BODY TEXT START -->
 <p>Hi, my name is John Smith and this is my first post on my new awesome personal blog.</p>
 <img src="assets/img/2019/sample.png" alt="error test" />
-<p>Don&apos;t worry, everything will be fine if you use <code>&</code><code>apos;</code> for apostrophe character!</p>
-';
+<p>Don&apos;t worry, everything will be fine!</p>
+<!-- BODY TEXT END -->
 
-echo html_entity_decode($conteudo, ENT_HTML5);
+
+HTML;
 define('rodape', true);
 require_once __DIR__.'/003.php';?>
