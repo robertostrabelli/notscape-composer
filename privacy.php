@@ -37,9 +37,10 @@ $AutorPostCompany = "JS Inc.";
 $datapub = "2019-12-03T16:49:05-03:00";
 
 require_once __DIR__.'/001.php';
+echo <<<HTML
 
-$conteudo = '
 
+<!-- BODY TEXT START -->
 <h4>Who we are?</h4>
 <p>John Smith Inc.</p>
 <h4>What we collect about you</h4>
@@ -48,9 +49,9 @@ $conteudo = '
 <p>Forever.</p>
 <h4>What rights do you have to the data recorded here</h4>
 <p>All!</p>
+<!-- BODY TEXT END -->
 
-';
 
-echo html_entity_decode($conteudo, ENT_HTML5);
+HTML;
 define('rodape', true);
 require_once __DIR__.'/003.php';?>
