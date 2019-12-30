@@ -99,15 +99,6 @@ $conteudo = '
                   <th>Table Heading 5</th>
                 </tr>
               </thead>
-              <tfoot>
-                <tr>
-                  <th>Table Footer 1</th>
-                  <th>Table Footer 2</th>
-                  <th>Table Footer 3</th>
-                  <th>Table Footer 4</th>
-                  <th>Table Footer 5</th>
-                </tr>
-              </tfoot>
               <tbody>
                 <tr>
                   <td>Table Cell 1</td>
@@ -138,6 +129,15 @@ $conteudo = '
                   <td>Table Cell 5</td>
                 </tr>
               </tbody>
+              <tfoot>
+                <tr>
+                  <th>Table Footer 1</th>
+                  <th>Table Footer 2</th>
+                  <th>Table Footer 3</th>
+                  <th>Table Footer 4</th>
+                  <th>Table Footer 5</th>
+                </tr>
+              </tfoot>
             </table>
             <h1>Code</h1>
             <div>
