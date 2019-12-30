@@ -30,10 +30,6 @@ $EnderecoSite = "https://johnsmithincsite.com";
 // general FOR EVERYBODY, XX years FOR SPECIFIC AGE, mature FOR +18 YEARS
 $Classifica = "general";
 
-// GENERATOR - NO POURPOSE, JUST FOR FUN. LEAVE IT, CHANGE OR LEAVE IN BLANK
-$GeradorSite = "Notscape Composer 1.0";
-
-
 // ====== BROWSER AND SERVER CACHE
 
 // CACHE SITE ACCESS FILES
@@ -99,7 +95,6 @@ $conteudo1 = '<!doctype html>
 <meta name="revisit-after" content="'. htmlentities($Revisit, ENT_QUOTES, "utf-8") . '">
 <meta name="author" content="' . htmlentities($AutorSite, ENT_QUOTES, "utf-8") . '">
 <meta name="copyright" content="' . htmlentities($Direitos, ENT_QUOTES, "utf-8") . '">
-<meta name="generator" content="' . htmlentities($GeradorSite, ENT_QUOTES, "utf-8") . '">
 <meta http-equiv="pragma" content="' . htmlentities($NavegadorCache, ENT_QUOTES, "utf-8") . '">
 <meta http-equiv="cache-control" content="' . htmlentities($NavegadorCache, ENT_QUOTES, "utf-8") . '">
 <meta name="rating" content="' . htmlentities($Classifica, ENT_QUOTES, "utf-8") . '">
