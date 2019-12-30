@@ -15,8 +15,8 @@ $pgModelo = "textofixo"; // PAGE TYPE - textofixo FOR FOLLOW PAGE
 // TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "Sign up my newsletter";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "newsletter, feed, rss";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "newsletter,feed,rss";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "be advice about news from me";
