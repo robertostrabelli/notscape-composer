@@ -30,15 +30,6 @@ $EnderecoSite = "https://johnsmithincsite.com";
 // general FOR EVERYBODY, XX years FOR SPECIFIC AGE, mature FOR +18 YEARS
 $Classifica = "general";
 
-// ====== BROWSER AND SERVER CACHE
-
-// CACHE SITE ACCESS FILES
-// public: for all same browser users.
-// private: only for the actual user.
-// no-cache: no cache the site files.
-// no-store: cache only for one session.
-$NavegadorCache = "no-cache";
-
 // TIME FOR REBUILD SERVER PROXY CACHE
 $Revisit = "10 days";
 
@@ -54,7 +45,6 @@ $Revisit = "10 days";
 // <li><a itemprop="url" href="follow.php">follow me</a></li>
 // <li><a itemprop="url" href="about.php">about</a></li>
 
-
 $MeuMenu = '
 <li><a itemprop="url" href="index.php">home</a></li>
 <li><a itemprop="url" href="timeline.php">timeline</a></li>
@@ -67,10 +57,11 @@ $MeuMenu = '
 ';
 
 // ====== FOOTER INFO
+
 // content inside p tag is recommended
 $FooterInfo = "<p><small>2019 &#x24B8; John Smith <a href='copyright.php'>All rights reserved</a></small></p>";
 
-// STOP CUSTOMIZATION HERE
+// STOP CONFIG CUSTOMIZATION HERE
 
 defined('cabeca') or die ("Erro" . htmlentities($Erro1, ENT_QUOTES, "utf-8"));
 $Erro1 = 'Erro';
@@ -95,8 +86,6 @@ $conteudo1 = '<!doctype html>
 <meta name="revisit-after" content="'. htmlentities($Revisit, ENT_QUOTES, "utf-8") . '">
 <meta name="author" content="' . htmlentities($AutorSite, ENT_QUOTES, "utf-8") . '">
 <meta name="copyright" content="' . htmlentities($Direitos, ENT_QUOTES, "utf-8") . '">
-<meta http-equiv="pragma" content="' . htmlentities($NavegadorCache, ENT_QUOTES, "utf-8") . '">
-<meta http-equiv="cache-control" content="' . htmlentities($NavegadorCache, ENT_QUOTES, "utf-8") . '">
 <meta name="rating" content="' . htmlentities($Classifica, ENT_QUOTES, "utf-8") . '">
 </head>
 <body itemscope itemtype="https://schema.org/WebPage" class="' . htmlentities($pgModelo, ENT_QUOTES, "utf-8") . '">
