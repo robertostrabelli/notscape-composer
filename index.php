@@ -15,8 +15,8 @@ $pgModelo = "entrada";
 // TITLE - WELCOME TITLE
 $pgTitulo = "Welcome to my site!";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS ABOUT SITE SUBJECT WILL SUFFICE
-$pgChaves = "blog, news, personal";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "blog,news,personal";
 
 // GENERAL SITE SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "John Smith personal blog";
