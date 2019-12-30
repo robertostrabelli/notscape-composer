@@ -16,7 +16,7 @@ $pgModelo = "textofixo";
 $pgTitulo = "Copyright";
 
 // META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
-$pgChaves = "copyright,license use";
+$pgChaves = "copyright,license,rights";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "How you can use this content";
