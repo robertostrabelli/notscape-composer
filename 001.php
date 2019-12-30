@@ -109,6 +109,7 @@ $conteudo1 = '<!doctype html>
 </nav>
 <main aria-label="Main content" itemscope itemtype="https://schema.org/Blog">
 <section>
+<h6 style="display:none;visibility:hidden;">' . htmlentities($pgTitulo, ENT_QUOTES, "utf-8") . '</h6>
 <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 <meta itemprop="mainEntityOfPage" content="' . htmlentities($EnderecoSite, ENT_QUOTES, "utf-8") . htmlentities($canonico, ENT_QUOTES, "utf-8") . '">
 <header><h2 itemprop="name headline">' . htmlentities($pgTitulo, ENT_QUOTES, "utf-8") . '</h2>
