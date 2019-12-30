@@ -15,8 +15,8 @@ $pgModelo = "timeline";
 // TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "All Posts";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "posts, timeline, texts, list";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "posts,timeline,texts,list";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "This is a list of all blog posts";
