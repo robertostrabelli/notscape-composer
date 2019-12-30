@@ -28,7 +28,7 @@ echo html_entity_decode($conteudor1, ENT_HTML5, "utf-8");
 
 $pgChaves = explode(',', $pgChaves);
 foreach($pgChaves as $link) { // if the site was installed in a directory and not in the domain or subdomain root, put the folder name like this /mysite/ after ' sign in the line below right after $EnderecoSite
-echo '<a rel="category tag" href="https://www.qwant.com/?q='.htmlentities($link, ENT_QUOTES, "utf-8").'+site:' . htmlentities($EnderecoSite, ENT_QUOTES, "utf-8") . '" title="tag search" target="_blank">'.htmlentities($link, ENT_QUOTES, "utf-8").'</a>';
+echo '<span class="palavrachave"><a rel="category tag" href="https://www.qwant.com/?q='.htmlentities($link, ENT_QUOTES, "utf-8").'+site:' . htmlentities($EnderecoSite, ENT_QUOTES, "utf-8") . '" title="tag search" target="_blank">'.htmlentities($link, ENT_QUOTES, "utf-8").'</a></span>';
 }
 
 $conteudor3 = '
