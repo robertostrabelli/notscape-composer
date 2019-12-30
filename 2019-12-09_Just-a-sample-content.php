@@ -15,8 +15,8 @@ $pgModelo = "texto";
 // POST TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
 $pgTitulo = "Just a sample content";
 
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE
-$pgChaves = "sample, content, post";
+// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
+$pgChaves = "sample,content,post";
 
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
 $pgDescricao = "This is my second post on my new blog and it is just sample content.";
