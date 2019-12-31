@@ -46,7 +46,7 @@ $conteudor3 = '
 <footer class="roda">
 <p><a href="#top">[Top]</a></p>
 ' . htmlentities($FooterInfo, ENT_HTML5, "utf-8") . '
-<p><small><a href="https://validator.w3.org/checklink?uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator test">W3C Check</a> <a href="https://github.com/robertostrabelli/notscape-composer" target="_blank" title="Github project">Github</a></small></p>
+<p><small><a href="https://validator.w3.org/checklink?uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator link test">W3C Link Check</a> <a href="https://validator.w3.org/unicorn/check?ucn_uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator test">W3C Validator</a> <a href="https://github.com/robertostrabelli/notscape-composer" target="_blank" title="Github project">Github</a></small></p>
 </footer>
 </body>
 </html>
