@@ -266,7 +266,7 @@ img
   box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
   width: 800px;
   margin: 1em auto 0 auto;
-  padding: 4% 8% 2% 8%;
+  padding: 4% 8% 3% 8%;
   background: rgba(243, 243, 243, 0.733);
 }
 
@@ -313,22 +313,30 @@ thead td, thead th, tfoot td, tfoot th
 hr
 {
   clear: both;
+  color: gray;
 }
 
-div.tabportifolioimg
+.tabport
 {
+  display:table-row;
+}
+
+.tabport-txt
+{
+  display:table-column;
+  width:440px;
   float: left;
-  clear: left;
-  padding-right: 2%;
+  clear:left;
+  border-top: 1px solid #BDBDBD;
 }
 
-.tabportifolio div img
+.tabport-img
 {
-  max-width: 250px;
-}
-
-div.tabportifoliodes
-{
+  display:table-column;
+  width:350px;
+  float: right;
+  clear:right;
+  border-top: 1px solid #BDBDBD;
 }
 
 .timeline main h2
@@ -353,11 +361,6 @@ div.tabportifoliodes
   text-decoration: none;
 }
 
-figure
-{
-  text-align: center;
-}
-
 figcaption, table caption
 {
   font-family: 'Gandhi Sans';
@@ -373,6 +376,10 @@ blockquote
 footer, .momento, cite, q
 {
   font-family: 'Gandhi Sans';
+}
+.momento
+{
+  border-top:1px solid #BDBDBD;
 }
 
 /* ocultar */
@@ -418,6 +425,22 @@ footer, .momento, cite, q
     max-width: 100%;
     text-align: center;
   }
+
+  .tabport-txt
+  {
+    display:block;
+    width:100%;
+    float: inherit;
+  }
+
+  .tabport-img
+  {
+    display:block;
+    width:100%;
+    float: inherit;
+    border: 0;
+  }
+
 }
 
 @media all and (max-width:950px)
