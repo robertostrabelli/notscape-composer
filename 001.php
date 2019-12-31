@@ -33,7 +33,7 @@ $Classifica = "general";
 // TIME FOR REBUILD SERVER PROXY CACHE
 $Revisit = "10 days";
 
-// ======= MENU CONFIG
+// ======== MENU CONFIG
 
 // Default:
 // <li><a itemprop="url" href="index.php">home</a></li>
@@ -56,12 +56,15 @@ $MeuMenu = '
 <li><a itemprop="url" href="about.php">about</a></li>
 ';
 
-// ====== FOOTER INFO
+// ========= FOOTER INFO
+// p tag use is recommended
+$FooterInfo = '
 
-// content inside p tag is recommended
-$FooterInfo = "<p><small>2019 &#x24B8; John Smith <a href='copyright.php'>All rights reserved</a></small></p>";
+<p><small>2019 &#x24B8; John Smith <a href="copyright.php">All rights reserved</a></small></p>
 
-// STOP CONFIG CUSTOMIZATION HERE
+';
+
+// ========= STOP CONFIG CUSTOMIZATION HERE
 
 defined('cabeca') or die ("Erro" . htmlentities($Erro1, ENT_QUOTES, "utf-8"));
 $Erro1 = 'Erro';
