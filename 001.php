@@ -20,15 +20,8 @@ $Direitos = "2019 (C) John Smith";
 // LANGUAGE (SAMPLE: pt, pt-br, en, en-us)
 $IdiomaSite = "en-us";
 
-// BE CAREFULL, CHANGE ONLY IF NECESSARY - DEFAULT utf-8
-$CharsetSite = "utf-8";
-
 // ONLY URL BASE ( EXAMPLE: http://johnsmithincsite.com or http://john.jsinc.com )
 $EnderecoSite = "https://johnsmithincsite.com";
-
-// CONTENT SITE RATING
-// general FOR EVERYBODY, XX years FOR SPECIFIC AGE, mature FOR +18 YEARS
-$Classifica = "general";
 
 // TIME FOR REBUILD SERVER PROXY CACHE
 $Revisit = "10 days";
@@ -61,6 +54,7 @@ $MeuMenu = '
 $FooterInfo = '
 
 <p><small>2019 &#x24B8; John Smith <a href="copyright.php">All rights reserved</a></small></p>
+<p><small><a href="https://validator.w3.org/checklink?uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator link test">W3C Link Check</a> <a href="https://validator.w3.org/unicorn/check?ucn_uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator test">W3C Validator</a> <a href="https://github.com/robertostrabelli/notscape-composer" target="_blank" rel="nofollow" title="Github project">Github</a></small></p>
 
 ';
 
@@ -71,7 +65,7 @@ $Erro1 = 'Erro';
 $conteudo1 = '<!doctype html>
 <html lang="'. htmlentities($IdiomaSite, ENT_QUOTES, "utf-8") . '">
 <head>
-<meta charset="'. htmlentities($CharsetSite, ENT_QUOTES, "utf-8") . '">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>' . htmlentities($pgTitulo, ENT_QUOTES, "utf-8") . ' | ' . htmlentities($TituloSite, ENT_QUOTES, "utf-8") . '</title>
 <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
@@ -82,10 +76,11 @@ $conteudo1 = '<!doctype html>
 <meta name="robots" content="' . htmlentities($pgRobos, ENT_QUOTES, "utf-8") . '">
 <meta name="googlebot" content="' . htmlentities($pgRoboGoogle, ENT_QUOTES, "utf-8") . '">
 <link rel="canonical" href="' . htmlentities($EnderecoSite, ENT_QUOTES, "utf-8") . htmlentities($canonico, ENT_QUOTES, "utf-8") . '" />
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="manifest" href="site.webmanifest" />
 <meta name="revisit-after" content="'. htmlentities($Revisit, ENT_QUOTES, "utf-8") . '">
 <meta name="author" content="' . htmlentities($AutorSite, ENT_QUOTES, "utf-8") . '">
 <meta name="copyright" content="' . htmlentities($Direitos, ENT_QUOTES, "utf-8") . '">
@@ -119,6 +114,5 @@ $conteudo1 = '<!doctype html>
 </header>
 <div itemprop="articleBody">
 ';
-
 echo html_entity_decode($conteudo1, ENT_HTML5, "utf-8");
 ?>
