@@ -51,8 +51,10 @@ echo <<<HTML
 
 <!-- BODY TEXT START -->
 <p>Hi, my name is John Smith and this is my first post on my new awesome personal blog.</p>
-<img src="assets/img/2019/sample.png" alt="error test" />
-<p>Don&apos;t worry, everything will be fine!</p>
+<figure>
+<img src="assets/img/2019/apple_colours.jpg" alt="apples" /><figcaption>http://mrg.bz/9dd13a</figcaption>
+</figure>
+<p>Don&apos;t worry, eat some apples and everything will be fine!</p>
 <!-- BODY TEXT END -->
 
 
