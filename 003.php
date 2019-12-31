@@ -23,14 +23,11 @@ $conteudor1 = '
 </span>
 <span role="separator">|</span>
 Tags: <span itemprop="keywords">';
-
 echo html_entity_decode($conteudor1, ENT_HTML5, "utf-8");
-
 $pgChaves = explode(',', $pgChaves);
 foreach($pgChaves as $link) { // if the site was installed in a directory and not in the domain or subdomain root, put the folder name like this /mysite/ between ' and " signs in the line below after $EnderecoSite
 echo '<span class="palavrachave"><a rel="category tag" href="https://www.qwant.com/?q='.htmlentities($link, ENT_QUOTES, "utf-8").'+site:' . htmlentities($EnderecoSite, ENT_QUOTES, "utf-8") . '" title="tag search" target="_blank">'.htmlentities($link, ENT_QUOTES, "utf-8").'</a></span>';
 }
-
 $conteudor3 = '
 </span>
 </small></p>
@@ -46,7 +43,6 @@ $conteudor3 = '
 <footer class="roda">
 <p><a href="#top">[Top]</a></p>
 ' . htmlentities($FooterInfo, ENT_HTML5, "utf-8") . '
-<p><small><a href="https://validator.w3.org/checklink?uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator link test">W3C Link Check</a> <a href="https://validator.w3.org/unicorn/check?ucn_uri=' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '" rel="nofollow" title="W3C Validator test">W3C Validator</a> <a href="https://github.com/robertostrabelli/notscape-composer" target="_blank" title="Github project">Github</a></small></p>
 </footer>
 </body>
 </html>
