@@ -3,6 +3,15 @@ define('cabeca', true);
 $canonico = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
 
+// CONTENT RATING
+// Safe For Kids               -CONTENT FOR CHILDREN ONLY
+// 14 Years                    -FOR MINIMUM AGE
+// General                     -FOR EVERYBODY
+// Mature                      -ADULTS ONLY
+// Restricted
+// RTA-5042-1996-1400-1577-RTA -RESTRICTED TO ADULTS
+$Classifica = "General";
+
 // SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
 $pgRobos = "index,follow";
 
