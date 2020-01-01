@@ -333,11 +333,12 @@ hr
 .tabport-img
 {
   display:table-column;
-  width:350px;
+  width:340px;
   float: right;
   clear:right;
   border-top: 1px solid #BDBDBD;
 }
+.tabport-img img {padding:6% 0% 5% 4% }
 
 .timeline main h2
 {
@@ -439,6 +440,11 @@ footer, .momento, cite, q
     width:100%;
     float: inherit;
     border: 0;
+  }
+  .tabport-img img
+  {
+    width:400px;
+    padding:0;
   }
 
 }
