@@ -49,6 +49,11 @@ $MeuMenu = '
 <li><a itemprop="url" href="about.php">about</a></li>
 ';
 
+// ========= COMMENTS TELEGRAM APP
+// Folow the instructions in https://comments.app/ - Comments for websites - Connect website
+// Remember to use the full address website
+$comtelegram = "eKsLqd3v";
+
 // ========= FOOTER INFO
 // p tag use is recommended
 $FooterInfo = '
