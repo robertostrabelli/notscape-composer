@@ -60,7 +60,7 @@ $data = str_replace('-',' ',$data);
 $conteudot2 = '<tr><td><a href='. htmlentities($NomedoArquivo, ENT_QUOTES, "utf-8") . '>' . htmlentities($titulo, ENT_QUOTES, "utf-8") . '</a></td><td>' . htmlentities($data, ENT_QUOTES, "utf-8") . '</td></tr>';
 echo html_entity_decode($conteudot2, ENT_HTML5);
  }
-$conteudot3 = '<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfood></table>';
+$conteudot3 = '<tfoot><tr><td>Tip: You can place a link here pointing to a zip archive with old posts if the list gets too long. Or delete it</td><td>ARCHIVE.ZIP</td></tr></tfoot></table>';
 
 echo html_entity_decode($conteudot3, ENT_HTML5);
 define('rodape', true);
