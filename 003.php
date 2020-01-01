@@ -31,6 +31,8 @@ echo '<span class="palavrachave"><a rel="category tag" href="https://www.qwant.c
 $conteudor3 = '
 </span>
 </small></p>
+<span class="momento"><small>Comments:</small><br />
+<script async src="https://comments.app/js/widget.js?2" data-comments-app-website="' . htmlentities($comtelegram, ENT_QUOTES, "utf-8") . '" data-limit="5" data-color="CA9C0E" data-dislikes="1"></script></span>
 </footer>
 <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
 <meta itemprop="url" content="android-chrome-512x512.png">
