@@ -1,8 +1,7 @@
 <?php
 define('cabeca', true);
-$canonico = ($_SERVER['REQUEST_URI']);
+$Uri = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
-
 // CONTENT RATING
 // Safe For Kids               -CONTENT FOR CHILDREN ONLY
 // 14 Years                    -FOR MINIMUM AGE
@@ -10,44 +9,35 @@ $datamod = date ("c", getlastmod());
 // Mature                      -ADULTS ONLY
 // Restricted
 // RTA-5042-1996-1400-1577-RTA -RESTRICTED TO ADULTS
-$Classifica = "General";
-
+$PageRating = "General";
 // SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRobos = "index,follow";
-
+$RobotsParameters = "index,follow";
 // INSTRUCTION FOR GOOGLEBOT ONLY
-$pgRoboGoogle = "";
-
-// PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
-$pgModelo = "texto";
-
+$GoogleBotDirectives = "";
+// PAGE TEMPLATE - "post" FOR REGULAR POSTS WITH META INFO FOOTER, "pagina" FOR PAGES WITHOUT FOOTER
+$PageTemplate = "post";
 // POST TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
-$pgTitulo = "Hello World!";
-
+$PageTitle="Hello World!";
 // META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
-$pgChaves = "first,post,awsome,blog";
-
+$PageKeywords="first,post,awsome,blog";
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
-$pgDescricao = "This is my first post on my new blog";
-
+$PageDescription="This is my first post on my new blog";
 // POST AUTHOR'S NAME
-$AutorPost = "John";
-
+$PageAuthor="John";
 // AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
-$AutorPostBio = "about.php";
-
+$PageAuthorBio="about.php";
 // AUTHOR'S JOB - NOT MANDATORY
-$AutorPostJob = "Boss";
-
+$PageAuthorJob="Boss";
 // AUTHOR'S COMPANY - NOT MANDATORY
-$AutorPostCompany = "JS Inc.";
-
+$PageAuthorCompany="JS Inc.";
 // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-08T00:01:00-03:00";
-
+$DatePub="2019-12-08T00:01:00-03:00";
+// SHOW COMMENTS - on OR off
+$Comments="off";
+// SHOW META DATA (AUTHOR, DATE, TAGS) - on OR off
+$ShowMeta="on";
 require_once __DIR__.'/001.php';
 echo <<<HTML
-
 
 <!-- BODY TEXT START -->
 <p>Hi, my name is John Smith and this is my first post on my new awesome personal blog.</p>
@@ -56,7 +46,6 @@ echo <<<HTML
 </figure>
 <p>Don&apos;t worry, eat some apples and everything will be fine!</p>
 <!-- BODY TEXT END -->
-
 
 HTML;
 define('rodape', true);
