@@ -1,59 +1,28 @@
 <?php
 define('cabeca', true);
-$canonico = ($_SERVER['REQUEST_URI']);
+$Uri = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
-
-// CONTENT RATING
-// Safe For Kids               -CONTENT FOR CHILDREN ONLY
-// 14 Years                    -FOR MINIMUM AGE
-// General                     -FOR EVERYBODY
-// Mature                      -ADULTS ONLY
-// Restricted
-// RTA-5042-1996-1400-1577-RTA -RESTRICTED TO ADULTS
-$Classifica = "General";
-
-// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRobos = "index,follow";
-
-// INSTRUCTION FOR GOOGLEBOT ONLY - NOT MANDATORY
-$pgRoboGoogle = "";
-
-// PAGE TYPE - "entrada" FOR INDEX WITHOUT ANY FOOTER, "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
-$pgModelo = "entrada";
-
-// TITLE - WELCOME TITLE
-$pgTitulo = "Welcome to my site!";
-
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
-$pgChaves = "blog,news,personal";
-
-// GENERAL SITE SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
-$pgDescricao = "John Smith personal blog";
-
-// COMPANY OR AUTHOR'S SITE NAME
-$AutorPost = "John";
-
-// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE - NOT MANDATORY NOT SHOWN IN INDEX
-$AutorPostBio = "about.php";
-
-// AUTHOR'S JOB - NOT MANDATORY
-$AutorPostJob = "Boss";
-
-// AUTHOR'S COMPANY - NOT MANDATORY OR SAME AS THE BLOG
-$AutorPostCompany = "JS Inc.";
-
-// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-03T21:50:00-03:00";
-
+$PageRating = "General";
+$RobotsParameters = "index,follow";
+$GoogleBotDirectives = "";
+$PageTemplate = "entrada";
+$PageTitle = "Welcome!";
+$PageKeywords = "blog,news,personal";
+$PageDescription = "John Smith Blog";
+$PageAuthor = "John";
+$PageAuthorBio = "about.php";
+$PageAuthorJob = "Boss";
+$PageAuthorCompany = "JS Inc.";
+$DatePub = "2019-12-03T21:50:00-03:00";
+$Comments="off";
+$ShowMeta="off";
 require_once __DIR__.'/001.php';
 echo <<<HTML
-
 
 <!-- BODY TEXT START -->
 <h6><i>Hi!</i></h6>
 <p>Welcome to my site. Here I regularly post some thoughts and even cake recipes.</p>
 <!-- BODY TEXT END -->
-
 
 HTML;
 define('rodape', true);
