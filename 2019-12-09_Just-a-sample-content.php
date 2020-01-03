@@ -1,8 +1,7 @@
 <?php
 define('cabeca', true);
-$canonico = ($_SERVER['REQUEST_URI']);
+$Uri = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
-
 // CONTENT RATING
 // Safe For Kids               -CONTENT FOR CHILDREN ONLY
 // 14 Years                    -FOR MINIMUM AGE
@@ -10,45 +9,37 @@ $datamod = date ("c", getlastmod());
 // Mature                      -ADULTS ONLY
 // Restricted
 // RTA-5042-1996-1400-1577-RTA -RESTRICTED TO ADULTS
-$Classifica = "General";
-
+$PageRating = "General";
 // SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRobos = "index,follow";
-
+$RobotsParameters = "index,follow";
 // INSTRUCTION FOR GOOGLEBOT ONLY
-$pgRoboGoogle = "";
-
-// PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
-$pgModelo = "texto";
-
+$GoogleBotDirectives = "";
+// PAGE TEMPLATE - "post" FOR REGULAR POSTS WITH META INFO FOOTER, "pagina" FOR PAGES WITHOUT FOOTER
+$PageTemplate = "post";
 // POST TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
-$pgTitulo = "Just a sample content";
-
+$PageTitle="Just a sample content";
 // META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
-$pgChaves = "sample,content,post";
-
+$PageKeywords="sample,content,post";
 // SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
-$pgDescricao = "This is my second post on my new blog and it is just sample content.";
-
+$PageDescription="This is my second post on my new blog and it is just sample content.";
 // POST AUTHOR'S NAME
-$AutorPost = "John";
-
+$PageAuthor="John";
 // AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
-$AutorPostBio = "about.php";
-
+$PageAuthorBio="about.php";
 // AUTHOR'S JOB - NOT MANDATORY
-$AutorPostJob = "Boss";
-
+$PageAuthorJob="Boss";
 // AUTHOR'S COMPANY - NOT MANDATORY
-$AutorPostCompany = "JS Inc.";
-
+$PageAuthorCompany="JS Inc.";
 // PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-09T00:02:00-01:00";
-
+$DatePub="2019-12-09T00:02:00-01:00";
+// SHOW COMMENTS - on OR off
+$Comments="off";
+// SHOW META DATA (AUTHOR, DATE, TAGS) - on OR off
+$ShowMeta="on";
 require_once __DIR__.'/001.php';
 echo <<<HTML
-
 <!-- BODY TEXT START -->
+
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -314,8 +305,8 @@ p q r s t u v w x y z { | } ~ </pre>
 </fieldset>
 </form>
 <p>Made by <a href="https://github.com/cbracco/html5-test-page" target="_blank">@cbracco</a></p>
-<!-- BODY TEXT END -->
 
+<!-- BODY TEXT END -->
 HTML;
 define('rodape', true);
 require_once __DIR__.'/003.php';?>
