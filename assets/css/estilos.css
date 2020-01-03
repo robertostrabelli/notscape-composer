@@ -241,12 +241,12 @@ img
   -ms-interpolation-mode: bicubic;
 }
 
-.texto main img, .textofixo main img
+.post main img, .pagina main img
 {
   max-width: 100%;
 }
 
-.texto main p,.textofixo main p
+.post main p,.pagina main p
 {
   font-size: 115%;
   letter-spacing: -1px;
@@ -259,7 +259,7 @@ img
   color: #2b2b2b;
 }
 
-.texto main, .entrada main, .textofixo main
+.post main, .entrada main, .pagina main
 {
   -webkit-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
@@ -270,7 +270,7 @@ img
   background: rgba(243, 243, 243, 0.733);
 }
 
-.texto main h2, .textofixo main h2
+.post main h2, .pagina main h2
 {
   text-transform: uppercase;
 }
@@ -374,19 +374,25 @@ blockquote
   font-size: 85%;
 }
 
-footer, .momento, cite, q
+footer, .momentoon, .comentarioson, cite, q
 {
   font-family: 'Gandhi Sans';
 }
-.momento
+.momentoon, .comentarioson
 {
+  margin-top:10px;
   border-top:1px solid #BDBDBD;
 }
 
 /* ocultar */
-.entrada footer, .entrada .momento, .timeline .momento, .textofixo .metapost
+.entrada footer
 {
-  display: none;
+  display: none;visibility:hidden
+}
+
+.momentooff, .comentariosoff
+{
+  display: none;visibility:hidden
 }
 
 
@@ -394,7 +400,7 @@ footer, .momento, cite, q
 
 @media all and (max-width:1476px)
 {
-  .texto main, .entrada main, .textofixo main
+  .post main, .entrada main, .pagina main
   {
     width: 800px;
     margin: 1em auto 0 auto;
@@ -407,7 +413,7 @@ footer, .momento, cite, q
 
 @media all and (max-width:990px)
 {
-  .texto main, .timeline main, .entrada main, .textofixo main
+  .post main, .timeline main, .entrada main, .pagina main
   {
     width: inherit;
     margin: 0 auto 0 auto;
