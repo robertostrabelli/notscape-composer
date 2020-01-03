@@ -1,57 +1,26 @@
 <?php
 define('cabeca', true);
-$canonico = ($_SERVER['REQUEST_URI']);
+$Uri = ($_SERVER['REQUEST_URI']);
 $datamod = date ("c", getlastmod());
-
-// CONTENT RATING
-// Safe For Kids               -CONTENT FOR CHILDREN ONLY
-// 14 Years                    -FOR MINIMUM AGE
-// General                     -FOR EVERYBODY
-// Mature                      -ADULTS ONLY
-// Restricted
-// RTA-5042-1996-1400-1577-RTA -RESTRICTED TO ADULTS
-$Classifica = "General";
-
-// SEARCH BOTS INSTRUCTION - SEE https://developers.google.com/search/reference/robots_meta_tag#directives_1
-$pgRobos = "noindex,follow";
-
-// INSTRUCTION FOR GOOGLEBOT ONLY
-$pgRoboGoogle = "";
-
-// PAGE TYPE - "texto" FOR REGULAR POSTS WITH AUTHOR INFO FOOTER, "textofixo" FOR PAGES WITHOUT FOOTER
-$pgModelo = "textofixo";
-
-// TITLE - RECOMMENDED TO USE SAME OR SIMILAR AS FILENAME
-$pgTitulo = "Portfolio";
-
-// META TAGS - 3 OR 4 STRONG KEYWORDS WILL SUFFICE - NO SPACE BETWEEN WORDS
-$pgChaves = "portfolio";
-
-// SUMMARY OR DESCRIPTION - IT IS RECOMMENDED TO USE A SHORT PHRASE
-$pgDescricao = "works I doing";
-
-// PAGE AUTHOR'S NAME
-$AutorPost = "John";
-
-// AUTHOR BIO PAGE - USE ABOUT.PHP FOR UNIQUE AUTHOR SITE
-$AutorPostBio = "about.php";
-
-// AUTHOR'S JOB - NOT MANDATORY
-$AutorPostJob = "boss";
-
-// AUTHOR'S COMPANY - NOT MANDATORY
-$AutorPostCompany = "JS Inc.";
-
-// PUB DATE - MANDATORY IN THIS FORMAT 2019-12-31T23:59:59-01:00 - SEE README.MD FOR INSTRUCTIONS
-$datapub = "2019-12-07T08:20:00-03:00";
-
+$PageRating = "General";
+$RobotsParameters = "noindex,follow";
+$GoogleBotDirectives = "";
+$PageTemplate = "pagina";
+$PageTitle = "Portfolio";
+$PageKeywords = "portfolio";
+$PageDescription = "";
+$PageAuthor = "John";
+$PageAuthorBio = "about.php";
+$PageAuthorJob = "Boss";
+$PageAuthorCompany = "JS Inc.";
+$DatePub = "2019-12-07T08:20:00-03:00";
+$Comments="off";
+$ShowMeta="off";
 require_once __DIR__.'/001.php';
 echo <<<HTML
 
-
 <!-- BODY TEXT START -->
 <p>Sample portfolio content with css class table</p>
-
 <div class="tabport">
 <div class="tabport-txt"><h5>One of my jobs</h5><h6>2007 - 2009</h6>
 <p>You can use this format style for your portfolio or make your own css.</p>
@@ -79,7 +48,6 @@ IMAGE HERE
 </div>
 </div>
 <!-- BODY TEXT END -->
-
 
 HTML;
 define('rodape', true);
