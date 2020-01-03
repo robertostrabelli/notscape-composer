@@ -91,14 +91,14 @@ More info:
 ### Internal search
 The solution to finding specific texts is not the best but it is supposed to work. Qwant has a good search engine, but if your site is not being indexed, you can request a visit from the robot: https://help.qwant.com/help/qwant-search/how-to-get-my-website-listed-on-qwant/
 
-If you want use another search engine you will need to make changes to the `search.php`, `001.php` and `003.php` files.
+If you want use another search engine you will need to make changes in `search.php`, `001.php` and `003.php` files and `assets/js/search.js` as well.
 
 #### Search page setup
 
 Put the full site url on `assets/js/search.js`, line 9, right after "site:", without `http` or `www`.
 
 #### Tag search
-You must define the domain or subdomain in `001.php` file, even if the site is in a subdirectory. At the same time, for keyword search to work from the links in the footer of posts, you must add the directory name to line 31 of the `003.php` file according to the instructions written there.
+You must define the domain or subdomain in `001.php` file, even if the site is in a subdirectory. At the same time, for keyword search work from the links in the footer of posts, if the site is in a subdirectory, you must add the directory name to line 31 of the `003.php` file according to the instructions written there.
 
 ### Style
 
