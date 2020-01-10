@@ -4,3 +4,5 @@ Disallow: /
 User-Agent: *
 Allow: /index.php
 Disallow: /assets
+
+Sitemap: http://johnsmithincsite.com/sitemap.xml
