@@ -74,10 +74,11 @@ Comments provided by Telegram. Just setup in https://comments.app/ - Comments fo
 
 This is very important if you want full control of search engines access and general archive of your content on Internet.
 
-#### Robots.txt
-The `robots.txt` file must be at the root of domain or subdomain. If used in a subdirectory, it will not work. 
+#### Robots.txt and sitemap.xml
 
-Make a good one using this generator: http://mcanerin.com/search-engine/tools/robots-txt-generator/. Block *assets* directory if you wish. Remember that spambots and badbots do not respect the `robots.txt` file instructions.
+This is important: the `robots.txt` file must be at the root of domain or subdomain. If used in a subdirectory, it will not work. Make a good one using this generator: http://mcanerin.com/search-engine/tools/robots-txt-generator/. Block *assets* directory if you wish. Remember that spambots and badbots do not respect the `robots.txt` file instructions.
+
+Be sure to change the sitemap address in the robots.txt file. You can create a sitemap using some free online tool such as https://www.xml-sitemaps.com/. You will need to generate a new sitemap.xml and submit it to the server every time you create new content.
 
 #### robots meta tag
 
