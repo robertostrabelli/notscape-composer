@@ -104,8 +104,12 @@ You must define the domain or subdomain in `001.php` file, even if the site is i
 ### Style
 
 The design was developed according to my preferences, but if you are good at CSS and studying the chaotic organization of CSS classes can change everything. Be free to rethink everything.
+There are three pre-created style designs that can be selected in `001.php` file:
+- `default.css`: my personal style
+- `dark-default.css`: same but in dark mode ;)
+- `minimal.css`: with minimum CSS required
 
-The easy way is edit `assets/css/mystyle.css` file and adapt `estilos.css` to your design preferences.
+Select one of then and edit `assets/css/mystyle.css` file to your design preferences.
 
 ### Advice
 
