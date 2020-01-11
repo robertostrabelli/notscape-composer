@@ -24,6 +24,8 @@ $FooterInfo = '
 <p><small>2019 &#x24B8; John Smith <a href="copyright.php">All rights reserved</a></small></p>
 ';
 
+$Estilo = "default.css"; // Desgin style CSS Options: default.css - dark-default.css - minimal.css
+
 // ========= STOP CONFIG CUSTOMIZATION HERE
 
 defined('cabeca') or die ("Erro" . htmlentities($Erro1, ENT_QUOTES, "utf-8"));
@@ -35,7 +37,7 @@ $conteudo1 = '<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>' . htmlentities($PageTitle, ENT_QUOTES, "utf-8") . ' &bull; ' . htmlentities($TitleSite, ENT_QUOTES, "utf-8") . '</title>
 <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
-<link rel="stylesheet" href="assets/css/estilos.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/' . htmlentities($Estilo, ENT_QUOTES, "utf-8") . '" type="text/css" />
 <link rel="stylesheet" href="assets/css/mystyle.css" type="text/css" />
 <meta name="keywords" content="' . htmlentities($PageKeywords, ENT_QUOTES, "utf-8") . '">
 <meta name="description" content="' . htmlentities($PageDescription, ENT_QUOTES, "utf-8") . '">
