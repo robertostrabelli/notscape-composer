@@ -4,17 +4,21 @@
 
 /* -------- SAMPLES ------------ */
 
-/* BACKGROUND COLOR OF TITLE SITE BOX */
+/* BACKGROUND COLOR OF TITLE SITE BOX
 .tit {background-color: #487346}
 
-/* BACKGROUND PATTERN - MAKE YOUR OWN HERE: http://www.patternify.com/ */
+*/
+
+/* BACKGROUND PATTERN - MAKE YOUR OWN HERE: http://www.patternify.com/
 body {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUklEQVQYlZWQsQ0AMQgDWTXTuPzaze8RiTW8z1dE8JVTWEL4MIJ4n0VHUQUASiKAUQ+wGpKYuZm5KYndiwLKKPDfP4kd6AMj0QavVlvH2O9x9AEHZ/Dt3HGOMgAAAABJRU5ErkJggg==) repeat;
 }
 
+*/
 
-/* BACKGROUND COLOR OF BOX TEXT */
+/* BACKGROUND COLOR OF BOX TEXT
 .texto main, .entrada main, .textofixo main
 {
   background: rgba(243, 243, 243, 0.733);
 }
 
+*/

@@ -1,0 +1,613 @@
+@font-face
+{
+  font-family: 'Strabelli';
+  src: url(../font/Strabelli.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Sans';
+    src:url(../font/GandhiSans-Bold.otf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Sans';
+    src:url(../font/GandhiSans-BoldItalic.otf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Sans';
+    src:url(../font/GandhiSans-Italic.otf);
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Sans';
+	src:url(../font/GandhiSans-Regular.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Serif';
+    src:url(../font/GandhiSerif-Bold.otf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Serif';
+    src:url(../font/GandhiSerif-BoldItalic.otf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Serif';
+    src:url(../font/GandhiSerif-Italic.otf);
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face
+{
+  font-family: 'Gandhi Serif';
+	src:url(../font/GandhiSerif-Regular.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+
+body
+{
+  font-size: 130%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25;
+  font-family: 'Gandhi Serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  color: #2b2b2b;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUklEQVQYlZWQsQ0AMQgDWTXTuPzaze8RiTW8z1dE8JVTWEL4MIJ4n0VHUQUASiKAUQ+wGpKYuZm5KYndiwLKKPDfP4kd6AMj0QavVlvH2O9x9AEHZ/Dt3HGOMgAAAABJRU5ErkJggg==) repeat;
+}
+
+a:link,a:visited
+{
+  color: royalblue;
+}
+
+a:hover,a:active
+{
+  color: darkgreen;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Gandhi Sans';
+  letter-spacing: -1px;
+  margin: 0.8em 0;
+}
+
+h1
+{
+  font-size: 220%;
+}
+
+h2
+{
+  font-size: 175%;
+}
+
+h3
+{
+  font-size: 160%;
+}
+
+h4
+{
+  font-size: 145%;
+}
+
+h5
+{
+  font-size: 120%;
+}
+
+h6
+{
+  font-size: 115%;
+}
+
+.roda
+{
+  max-width: 100%;
+  margin-top: 2em;
+  padding: 1% 1% 1% 1%;
+  text-align: center;
+}
+
+.tit
+{
+  max-width: 360px;
+  color: white;
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0;
+  border-radius: 0 30px 0 0;
+  -moz-border-radius: 0 30px 0 0;
+  -webkit-border-radius: 0 30px 0 0;
+  border: 1px solid #2a4529;
+  background-color: #487346;
+  -webkit-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+}
+
+.tit h1
+{
+  font-size: 150%;
+  margin: 0;
+  padding-top: 0.8em;
+  font-family: 'Strabelli';
+}
+
+.tit p
+{
+  font-family: 'Gandhi Sans';
+}
+
+.tit a, nav a
+{
+  color: white;
+  text-decoration: none;
+}
+
+nav a:link,nav a:visited
+{
+  color: lightgray;
+}
+
+nav a:hover,nav a:active
+{
+  color: white;
+}
+
+nav
+{
+  max-width: 360px;
+  padding: 0;
+  border-radius: 0 0 30px 0;
+  -moz-border-radius: 0 0 30px 0;
+  -webkit-border-radius: 0 0 30px 0;
+  border: 1px solid #2a4529;
+  background-color: #5c4e30;
+  -webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.75);
+}
+
+nav ul
+{
+  list-style-type: none;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li
+{
+  display: inline;
+}
+
+nav ul li ul
+{
+  display: inline;
+}
+
+nav li
+{
+  font-family: 'Gandhi Sans';
+  font-size: 100%;
+}
+
+nav li::after
+{
+  content: " | ";
+  color: #867448;
+}
+
+nav li:last-of-type::after
+{
+  content: " ";
+}
+
+img
+{
+  -ms-interpolation-mode: bicubic;
+}
+
+.post main img, .pagina main img
+{
+  max-width: 100%;
+}
+
+.post main p,.pagina main p
+{
+  font-size: 115%;
+  letter-spacing: -1px;
+  line-height: 1.35;
+  margin: 0.8em 0;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.post main, .entrada main, .pagina main
+{
+  -webkit-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -2px 5px rgba(50, 50, 50, 0.75);
+  width: 800px;
+  margin: 1em auto 0 auto;
+  padding: 4% 8% 3% 8%;
+  background: rgba(243, 243, 243, 0.733);
+}
+
+.post main h2, .pagina main h2
+{
+  text-transform: uppercase;
+}
+
+.entrada main
+{
+  padding-top: 2%;
+}
+
+.timeline main
+{
+  margin: 1em auto 0 auto;
+  padding: 1% 8% 1% 8%;
+}
+
+.palavrachave::after
+{
+  content: " ";
+}
+
+textarea
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+table, td,thead td, thead th, tfoot td, tfoot th
+{
+  border: 1px solid gray;
+}
+
+td
+{
+  padding:4px;
+}
+
+hr
+{
+  clear: both;
+  color: gray;
+}
+
+.tabport
+{
+  display:table-row;
+}
+
+.tabport-txt
+{
+  display:table-column;
+  width:440px;
+  float: left;
+  clear:left;
+  border-top: 1px solid #BDBDBD;
+}
+
+.tabport-img
+{
+  display:table-column;
+  width:340px;
+  float: right;
+  clear:right;
+  border-top: 1px solid #BDBDBD;
+}
+.tabport-img img {padding:6% 0% 5% 4% }
+
+.timeline main h2
+{
+  text-align: center;
+  background: rgba(243, 243, 243, 0.733);
+  margin-bottom: 0;
+  border: 1px solid gray;
+}
+
+.timeline main table
+{
+  width: 100%;
+  background: rgba(243, 243, 243, 0.733);
+  font-family: 'Gandhi Sans';
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.timeline main a
+{
+  text-decoration: none;
+}
+
+figcaption, table caption
+{
+  font-family: 'Gandhi Sans';
+  font-size: 80%;
+}
+
+blockquote
+{
+  font-family: 'Gandhi Sans';
+  font-size: 85%;
+}
+
+footer, .momentoon, .comentarioson, cite, q
+{
+  font-family: 'Gandhi Sans';
+}
+.momentoon, .comentarioson
+{
+  margin-top:10px;
+  border-top:1px solid #BDBDBD;
+}
+
+/* ocultar */
+.entrada footer
+{
+  display: none;visibility:hidden
+}
+
+.momentooff, .comentariosoff
+{
+  display: none;visibility:hidden
+}
+
+
+/* RESPONSIVIDADE */
+
+@media all and (max-width:1476px)
+{
+  .post main, .entrada main, .pagina main
+  {
+    width: 800px;
+    margin: 1em auto 0 auto;
+  }
+}
+
+@media all and (max-width:1250px)
+{
+}
+
+@media all and (max-width:990px)
+{
+  .post main, .timeline main, .entrada main, .pagina main
+  {
+    width: inherit;
+    margin: 0 auto 0 auto;
+  }
+
+  body
+  {
+    font-size: 127%;
+  }
+
+  nav, .tit
+  {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .tabport-txt
+  {
+    display:block;
+    width:100%;
+    float: inherit;
+  }
+
+  .tabport-img
+  {
+    display:block;
+    width:100%;
+    float: inherit;
+    border: 0;
+  }
+  .tabport-img img
+  {
+    width:400px;
+    padding:0;
+  }
+
+}
+
+@media all and (max-width:950px)
+{
+  body
+  {
+    font-size: 125%;
+  }
+
+  .tit, nav
+  {
+    font-size: inherit;
+  }
+}
+
+@media all and (max-width:900px)
+{
+  body
+  {
+    font-size: 123%;
+  }
+}
+
+@media all and (max-width:850px)
+{
+  body
+  {
+    font-size: 118%;
+  }
+}
+
+@media all and (max-width:800px)
+{
+  body
+  {
+    font-size: 115%;
+  }
+
+  .tit, nav
+  {
+    font-size: 110%;
+  }
+}
+
+@media all and (max-width:750px)
+{
+  body
+  {
+    font-size: 110%;
+  }
+
+  .tit, nav
+  {
+    font-size: 115%;
+  }
+}
+
+@media all and (max-width:700px)
+{
+  body
+  {
+    font-size: 105%;
+  }
+
+  .tit, nav
+  {
+    font-size: 120%;
+  }
+}
+
+@media all and (max-width:650px)
+{
+  body
+  {
+    font-size: 100%;
+  }
+
+  .tit, nav
+  {
+    font-size: 125%;
+  }
+}
+
+@media all and (max-width:600px)
+{
+  body
+  {
+    font-size: 95%;
+  }
+
+  .tit, nav
+  {
+    font-size: 130%;
+  }
+}
+
+@media all and (max-width:550px)
+{
+  body
+  {
+    font-size: 90%;
+  }
+
+  .tit, nav
+  {
+    font-size: 135%;
+  }
+}
+
+@media all and (max-width:500px)
+{
+  body
+  {
+    font-size: 85%;
+  }
+
+  .tit, nav
+  {
+    font-size: 130%;
+  }
+}
+
+@media all and (max-width:450px)
+{
+  body
+  {
+    font-size: 80%;
+  }
+
+  .tit, nav
+  {
+    font-size: 135%;
+  }
+}
+
+@media all and (max-width:400px)
+{
+  body
+  {
+    font-size: 75%;
+  }
+
+  .tit, nav
+  {
+    font-size: 140%;
+  }
+}
+
+@media all and (max-width:350px)
+{
+  body
+  {
+    font-size: 70%;
+  }
+
+  .tit, nav
+  {
+    font-size: 145%;
+  }
+}
