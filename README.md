@@ -28,7 +28,7 @@ It is a very basic application of PHP code, which joins the parts of HTML code (
 ## INSTRUCTIONS
 
 ### Install
-Just put the files on the server and change all php files permission to 644 and folders to 755. Setup the `001.php`, `003.php` and `assets/js/search.js` files and that should work. 
+Just put the files on the server and change all php files permission to 644 and folders to 755. Setup the `001.php` and `assets/js/search.js` files and that should work. 
 
 ### Writing
 Edit in your favorite code editor.
@@ -98,18 +98,16 @@ If you want use another search engine you will need to make changes in `search.p
 
 Put the full site url on `assets/js/search.js`, line 9, right after "site:", without `http` or `www`.
 
-#### Tag search
-You must define the domain or subdomain in `001.php` file, even if the site is in a subdirectory. At the same time, for keyword search work from the links in the footer of posts, if the site is in a subdirectory, you must add the directory name to line 31 of the `003.php` file according to the instructions written there.
-
 ### Style
 
-The design was developed according to my preferences, but if you are good at CSS and studying the chaotic organization of CSS classes can change everything. Be free to rethink everything.
 There are three pre-created style designs that can be selected in `001.php` file:
 - `default.css`: my personal style
 - `dark-default.css`: same but in dark mode ;)
 - `minimal.css`: with minimum CSS required
 
-Select one of then and edit `assets/css/mystyle.css` file to your design preferences.
+If you are good at CSS and studying the chaotic organization of CSS classes you can change everything. Be free to rethink everything.
+
+You can edit `assets/css/mystyle.css` for minor changes to your design preferences.
 
 ### Advice
 
