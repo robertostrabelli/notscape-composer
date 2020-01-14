@@ -36,6 +36,11 @@ $DatePub="2019-12-09T00:02:00-01:00";
 $Comments="off";
 // SHOW META DATA (AUTHOR, DATE, TAGS) - on OR off
 $ShowMeta="on";
+// FEATURED IMAGE (IF NONE, LEAVE DEFAULT (LOGO ICON) OR BLANK
+
+$Image="android-chrome-512x512.png";
+
+
 require_once __DIR__.'/001.php';
 echo <<<HTML
 <!-- BODY TEXT START -->
