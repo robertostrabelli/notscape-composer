@@ -37,10 +37,7 @@ $Comments="off";
 // SHOW META DATA (AUTHOR, DATE, TAGS) - on OR off
 $ShowMeta="on";
 // FEATURED IMAGE (IF NONE, LEAVE DEFAULT (LOGO ICON) OR BLANK
-
 $Image="android-chrome-512x512.png";
-
-
 require_once __DIR__.'/001.php';
 echo <<<HTML
 <!-- BODY TEXT START -->
