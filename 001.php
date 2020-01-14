@@ -1,16 +1,16 @@
 <?php
 $AuthorSite = "John Smith"; // Company, organization or unique author
 $PublisherSite = "Smith Inc."; // Organization name or same as above
-$PublisherUrlSite = "https://strabelli.com";
-$PublisherLogoSite = "android-chrome-512x512.png";
-$PublisherLogoWidthSite = "512";
-$PublisherLogoHeightSite = "512";
-$TitleSite = "JS Inc. site"; // Site name
-$TaglineSite = "Our site is awesome!"; // Very short site description
+$PublisherUrlSite = "https://strabelli.com"; // Organization site or same as blog
+$PublisherLogoSite = "android-chrome-512x512.png"; // Organization logo address or default blog logo icon
+$PublisherLogoWidthSite = "512"; // Logo width size
+$PublisherLogoHeightSite = "512"; // Logo height size
+$TitleSite = "JS Inc. site"; // Blog name
+$TaglineSite = "Our site is awesome!"; // Very short blog description
 $CopyrightSite = "2019 (C) John Smith"; // Short copyright advice
 $LangSite = "en-us"; // Language (pt, pt-br, en, en-us)
-$UrlBaseSite = "http://johnsmithincsite.com"; // URL base only (without directory if exist)
-$UrlDirectorySite = ""; // If blog is inside directory - sample: "/blog/"
+$UrlBaseSite = "http://johnsmithincsite.com"; // Blog URL base only (without directory if exist)
+$UrlDirectorySite = ""; // Directory name if blog is inside one - sample: "/blog"
 
 $Menu = '
 <li><a itemprop="url" href="index.php">Home</a></li>
