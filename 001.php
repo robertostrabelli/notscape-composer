@@ -1,11 +1,16 @@
 <?php
 $AuthorSite = "John Smith"; // Company, organization or unique author
 $PublisherSite = "Smith Inc."; // Organization name or same as above
+$PublisherUrlSite = "https://strabelli.com";
+$PublisherLogoSite = "android-chrome-512x512.png";
+$PublisherLogoWidthSite = "512";
+$PublisherLogoHeightSite = "512";
 $TitleSite = "JS Inc. site"; // Site name
 $TaglineSite = "Our site is awesome!"; // Very short site description
 $CopyrightSite = "2019 (C) John Smith"; // Short copyright advice
 $LangSite = "en-us"; // Language (pt, pt-br, en, en-us)
-$UrlSite = "http://johnsmithincsite.com"; // URL base only (without directory if exist)
+$UrlBaseSite = "http://johnsmithincsite.com"; // URL base only (without directory if exist)
+$UrlDirectorySite = ""; // If blog is inside directory - sample: "/blog/"
 
 $Menu = '
 <li><a itemprop="url" href="index.php">Home</a></li>
@@ -35,6 +40,7 @@ $conteudo1 = '<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="alternate" title="TITLE SITE" type="application/rss+xml" href="rss.xml"> -->
 <title>' . htmlentities($PageTitle, ENT_QUOTES, "utf-8") . ' &bull; ' . htmlentities($TitleSite, ENT_QUOTES, "utf-8") . '</title>
 <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/' . htmlentities($Estilo, ENT_QUOTES, "utf-8") . '" type="text/css" />
@@ -43,7 +49,7 @@ $conteudo1 = '<!doctype html>
 <meta name="description" content="' . htmlentities($PageDescription, ENT_QUOTES, "utf-8") . '">
 <meta name="robots" content="' . htmlentities($RobotsParameters, ENT_QUOTES, "utf-8") . '">
 <meta name="googlebot" content="' . htmlentities($GoogleBotDirectives, ENT_QUOTES, "utf-8") . '">
-<link rel="canonical" href="' . htmlentities($UrlSite, ENT_QUOTES, "utf-8") . htmlentities($Uri, ENT_QUOTES, "utf-8") . '" />
+<link rel="canonical" href="' . htmlentities($UrlBaseSite, ENT_QUOTES, "utf-8") . htmlentities($Uri, ENT_QUOTES, "utf-8") . '" />
 <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -76,7 +82,9 @@ $conteudo1 = '<!doctype html>
 <section>
 <h6 style="display:none;visibility:hidden;">' . htmlentities($PageTitle, ENT_QUOTES, "utf-8") . '</h6>
 <article itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-<meta itemprop="mainEntityOfPage" content="' . htmlentities($UrlSite, ENT_QUOTES, "utf-8") . htmlentities($Uri, ENT_QUOTES, "utf-8") . '">
+<meta itemprop="thumbnailUrl" content="' . htmlentities($Image, ENT_QUOTES, "utf-8") . '">
+<meta itemprop="image" content="' . htmlentities($Image, ENT_QUOTES, "utf-8") . '">
+<meta itemprop="mainEntityOfPage" content="' . htmlentities($UrlBaseSite, ENT_QUOTES, "utf-8") . htmlentities($Uri, ENT_QUOTES, "utf-8") . '">
 <header><h2 itemprop="name headline">' . htmlentities($PageTitle, ENT_QUOTES, "utf-8") . '</h2>
 </header>
 <div itemprop="articleBody">
