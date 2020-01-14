@@ -16,6 +16,7 @@ $PageAuthorCompany = "JS Inc.";
 $DatePub = "2019-12-07T08:20:00-03:00";
 $Comments="off";
 $ShowMeta="off";
+$Image="android-chrome-512x512.png";
 require_once __DIR__.'/001.php';
 echo <<<HTML
 
