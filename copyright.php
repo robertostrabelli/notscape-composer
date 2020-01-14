@@ -16,6 +16,8 @@ $PageAuthorCompany = "JS Inc.";
 $DatePub = "2019-12-03T16:49:05-03:00";
 $Comments="off";
 $ShowMeta="off";
+// FEATURED IMAGE (IF NONE, LEAVE DEFAULT (LOGO ICON) OR BLANK
+$Image="android-chrome-512x512.png";
 require_once __DIR__.'/001.php';
 echo <<<HTML
 
