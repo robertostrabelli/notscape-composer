@@ -114,4 +114,4 @@ You can edit `assets/css/mystyle.css` for minor changes to your design preferenc
 Avoid messing up the `timeline.php`, `001.php` and `003.php` files. I recommend maintaining and using the `about.php`, `follow.php`, `copyright.php`, `search.php` and `privacy.php` pages. `index.php` also is critic.
 
 ## Help me
-This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://imvegan.fyi/@roberto">tell me</a>.
+This is my first public code on Github and I'm a beginner. If you see something wrong, please, <a rel="me" href="https://banana.dog/@roberto">tell me</a>.
